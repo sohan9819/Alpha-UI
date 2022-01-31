@@ -2,6 +2,8 @@
 
 UI Component Library based on dark theme first approach
 
+![alpha](https://user-images.githubusercontent.com/64985447/151864832-9d0838bc-2495-4686-ac03-bb43e1d23f86.png)
+
 ## Color Palette
 
 Theme Colors
