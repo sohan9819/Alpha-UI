@@ -47,3 +47,16 @@ Base Colors
 | white-2       | `#bdc3c7` |
 | gray-1        | `#95a5a6` |
 | gray-2        | `#7f8c8d` |
+
+## Utility Classes
+
+### Headings
+
+| classes | font-size | line-height |
+| ------- | --------- | ----------- |
+| `.h1`   | `4.8rem`  | `6.4rem`    |
+| `.h2`   | `3.2rem`  | `4.0rem`    |
+| `.h3`   | `2.4rem`  | `3.2rem`    |
+| `.h4`   | `1.6rem`  | `2.4rem`    |
+| `.h5`   | `1.2rem`  | `1.6rem`    |
+| `.h6`   | `0.8rem`  | `1.2rem`    |
