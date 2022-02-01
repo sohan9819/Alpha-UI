@@ -143,8 +143,8 @@
   height: 6rem;
   width: 6rem;
   background: linear-gradient(
-    to right,
-    rgba(var(--color-rgb-pink), 0.6),
+    to right bottom,
+    rgba(var(--color-rgb-pink), 1),
     rgba(var(--color-rgb-purple), 1)
   );
 }
