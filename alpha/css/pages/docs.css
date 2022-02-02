@@ -145,13 +145,13 @@
   margin-bottom: 1rem;
   background-image: linear-gradient(
       to bottom,
-      rgba(var(--color-rgb-orange), 0.8),
+      rgba(var(--color-rgb-orange), 1),
       rgba(var(--color-rgb-yellow), 1)
     ),
     url("../img/nat-4.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* color: transparent; */
+  color: transparent;
 }
 
 .avatar__type-demo {
@@ -169,4 +169,30 @@
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.badge__type-name {
+  width: 100%;
+  text-align: center;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-white), 1),
+      rgba(var(--color-rgb-pink), 1)
+    ),
+    url("../img/nat-4.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.badge__demo {
+  width: 100%;
+  max-width: 40rem;
+  height: max-content;
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
