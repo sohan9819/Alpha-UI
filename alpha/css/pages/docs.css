@@ -30,6 +30,8 @@
 
 .alpha-docs__main__article {
   overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .alpha-docs--primary {
