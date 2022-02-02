@@ -148,3 +148,39 @@
     rgba(var(--color-rgb-purple), 1)
   );
 }
+
+.alert__demo-block {
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 60rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.alert__demo-title {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-orange), 1),
+      rgba(var(--color-rgb-red), 1)
+    ),
+    url("../img/nat-4.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+.alert__demo-alerts {
+  /* max-width: 80rem; */
+  width: 100%;
+  min-width: 40rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}

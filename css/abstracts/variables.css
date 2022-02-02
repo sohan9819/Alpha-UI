@@ -32,7 +32,6 @@
   /* BASE COLORS */
 
   --color-black: #000000;
-  --color-rgb-black: 0, 0, 0;
 
   --color-dark-green-1: #1abc9c;
   --color-dark-green-2: #16a085;
@@ -63,6 +62,40 @@
 
   --color-light-grey-1: #95a5a6;
   --color-light-grey-2: #7f8c8d;
+
+  /* BASE COLORS IN rgb */
+
+  --color-rgb-black: 0, 0, 0;
+
+  --color-rgb-dark-green-1: 26, 188, 156;
+  --color-rgb-dark-green-2: 22, 160, 133;
+
+  --color-rgb-light-green-2: 39, 174, 96;
+  --color-rgb-light-green-1: 46, 204, 113;
+
+  --color-rgb-blue-1: 52, 152, 219;
+  --color-rgb-blue-2: 41, 128, 185;
+
+  --color-rgb-purple-1: 155, 89, 182;
+  --color-rgb-purple-2: 142, 68, 173;
+
+  --color-rgb-dark-grey-1: 52, 73, 94;
+  --color-rgb-dark-grey-2: 44, 62, 80;
+
+  --color-rgb-yellow-1: 241, 196, 15;
+  --color-rgb-yellow-2: 243, 156, 18;
+
+  --color-rgb-orange-1: 230, 126, 34;
+  --color-rgb-orange-2: 211, 84, 0;
+
+  --color-rgb-red-1: 231, 76, 60;
+  --color-rgb-red-2: 192, 57, 43;
+
+  --color-rgb-white-1: 236, 240, 241;
+  --color-rgb-white-2: 189, 195, 199;
+
+  --color-rgb-light-grey-1: 149, 165, 166;
+  --color-rgb-light-grey-2: 127, 140, 141;
 
   /* FONTS */
 

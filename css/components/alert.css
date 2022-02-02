@@ -1,0 +1,308 @@
+/* ######## ALERT BASIC ######## */
+
+/* ALERT BASIC ERROR */
+
+.alert__basic-error {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-red-1);
+  background-color: rgba(var(--color-rgb-red-2), 0.2);
+  padding: 1rem;
+}
+.alert__basic-error .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__basic-error .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__basic-error .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+/* ALERT BASIC WARNING */
+
+.alert__basic-warning {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-yellow-1);
+  background-color: rgba(var(--color-rgb-yellow-2), 0.2);
+  padding: 1rem;
+}
+
+.alert__basic-warning .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__basic-warning .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__basic-warning .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT BASIC INFO */
+
+.alert__basic-info {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-blue-1);
+  background-color: rgba(var(--color-rgb-blue-2), 0.2);
+  padding: 1rem;
+}
+
+.alert__basic-info .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__basic-info .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__basic-info .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT BASIC SUCCESS */
+
+.alert__basic-success {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-light-green-1);
+  background-color: rgba(var(--color-rgb-light-green-2), 0.4);
+  padding: 1rem;
+}
+
+.alert__basic-success .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__basic-success .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__basic-success .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+/* ######## ALERT OUTLINE ######## */
+
+/* ALERT OUTLINE ERROR */
+
+.alert__outline-error {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-red-1);
+  border: 2px solid var(--color-red-2);
+  padding: 1rem;
+}
+.alert__outline-error .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__outline-error .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__outline-error .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+/* ALERT OUTLINE WARNING */
+
+.alert__outline-warning {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-yellow-1);
+  border: 2px solid var(--color-yellow-2);
+  padding: 1rem;
+}
+
+.alert__outline-warning .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__outline-warning .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__outline-warning .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT OUTLINE INFO */
+
+.alert__outline-info {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-blue-1);
+  border: 2px solid var(--color-blue-2);
+  padding: 1rem;
+}
+
+.alert__outline-info .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__outline-info .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__outline-info .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT OUTLINE SUCCESS */
+
+.alert__outline-success {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-light-green-1);
+  border: 2px solid var(--color-light-green-2);
+  padding: 1rem;
+}
+
+.alert__outline-success .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__outline-success .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__outline-success .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+/* ######## ALERT FILL ######## */
+
+/* ALERT FILL ERROR */
+
+.alert__fill-error {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-white);
+  background-color: var(--color-red-2);
+  padding: 1rem;
+}
+.alert__fill-error .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__fill-error .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__fill-error .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+
+/* ALERT OUTLINE WARNING */
+
+.alert__fill-warning {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-white);
+  background-color: var(--color-yellow-2);
+  padding: 1rem;
+}
+
+.alert__fill-warning .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__fill-warning .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__fill-warning .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT OUTLINE INFO */
+
+.alert__fill-info {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-white);
+  background-color: var(--color-blue-2);
+  padding: 1rem;
+}
+
+.alert__fill-info .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__fill-info .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__fill-info .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
+/* ALERT OUTLINE SUCCESS */
+
+.alert__fill-success {
+  min-width: 20rem;
+  width: max-content;
+  color: var(--color-white);
+  background-color: var(--color-light-green-2);
+  padding: 1rem;
+}
+
+.alert__fill-success .alert__text {
+  display: inline;
+  padding: 0rem 1rem;
+}
+.alert__fill-success .alert__icon {
+  font-weight: 600;
+  display: inline;
+  padding-left: 1rem;
+}
+.alert__fill-success .alert__close {
+  display: inline-block;
+  padding: 0rem 1rem;
+  padding-left: 4rem;
+  cursor: pointer;
+}
