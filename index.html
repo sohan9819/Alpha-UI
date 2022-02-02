@@ -4,25 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="og:description"
+      content="UI Component Library based on dark theme first approach"
+    />
+
+    <meta property="og:image" content="../assets/images/logo.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./alpha/css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/logo.svg"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6628b0a71.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ALPHA UI</title>
   </head>
   <body>
-    <!-- <div class="container">
-      <hgroup>
-        <h1>Typography (Heading)</h1>
-        <h2>Typography (Heading)</h2>
-        <h3>Typography (Heading)</h3>
-        <h4>Typography (Heading)</h4>
-        <h5>Typography (Heading)</h5>
-        <h6>Typography (Heading)</h6>
-      </hgroup>
-      <p>Typography (Text)</p>
-      <p>Typography (Text)</p>
-      <p>Typography (Text)</p>
-      <p>Typography (Text)</p>
-      <p>Typography (Text)</p>
-    </div> -->
+    <div class="alpha">
+      <!-- ##### NAV BAR #### -->
+      <nav class="alpha__nav p-1">
+        <h2 class="alpha__nav--logo h3">
+          <a href="../index.html" class="alpha__nav--logo-main">ALPHA</a>
+          &nbsp;UI
+        </h2>
+
+        <!-- <h2 class="alpha__nav--link h4">
+          <i class="fab fa-github"></i> &nbsp; github
+        </h2> -->
+      </nav>
+
+      <!-- ##### PAGE CONTENT #### -->
+      <header class="alpha__header">
+        <main class="alpha__header__main flex-center">
+          <img
+            src="./assets/images/logo.svg"
+            alt="logo"
+            srcset=""
+            class="alpha__img"
+          />
+          <h3 class="alpha__version h4">V 1.0</h3>
+        </main>
+
+        <article class="alpha__header__article flex-center">
+          <h4 class="alpha__header__title h4">
+            UI Component Library based on dark theme first approach
+          </h4>
+
+          <div class="alpha__buttons">
+            <a href="#" class="btn--alpha h4"
+              ><i class="fab fa-github"></i> &nbsp; github
+            </a>
+            <a href="./alpha/docs.html" class="btn--alpha h4"
+              ><i class="fas fa-file"></i> &nbsp; docs
+            </a>
+          </div>
+        </article>
+
+        <p class="alpha__header__status">Project under development</p>
+      </header>
+    </div>
   </body>
 </html>

@@ -1,0 +1,73 @@
+/* MARGIN */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+.m-6 {
+  margin: 6rem;
+}
+.m-8 {
+  margin: 8rem;
+}
+/* PADDING */
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+.p-6 {
+  padding: 6rem;
+}
+.p-8 {
+  padding: 8rem;
+}
+
+/* BORDER RADIUS */
+
+.border-s {
+  border-radius: 0.5rem;
+}
+.border-m {
+  border-radius: 1rem;
+}
+.border-l {
+  border-radius: 1.5rem;
+}
+.border-f {
+  border-radius: 999rem;
+}
+
+/* FLEX */
+
+.flex-center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-even {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
