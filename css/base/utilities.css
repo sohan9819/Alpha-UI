@@ -37,25 +37,56 @@
 
 /* BORDER RADIUS */
 
-.border-s {
+.border--rad-s {
   border-radius: 0.5rem;
 }
-.border-m {
+.border--rad-m {
   border-radius: 1rem;
 }
-.border-l {
+.border--rad-l {
   border-radius: 1.5rem;
 }
-.border-f {
+.border--rad-f {
   border-radius: 999rem;
+}
+
+/* BACKGROUND COLORS */
+
+.bg--color-white {
+  background-color: var(--color-white);
+}
+.bg--color-alpha {
+  background-color: var(--color-alpha);
+}
+.bg--color-cyan {
+  background-color: var(--color-cyan);
+}
+.bg--color-green {
+  background-color: var(--color-green);
+}
+.bg--color-orange {
+  background-color: var(--color-orange);
+}
+.bg--color-pink {
+  background-color: var(--color-pink);
+}
+.bg--color-purlple {
+  background-color: var(--color-purple);
+}
+.bg--color-red {
+  background-color: var(--color-red);
+}
+.bg--color-yellow {
+  background-color: var(--color-yellow);
 }
 
 /* FLEX */
 
 .flex-center {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-even {
@@ -67,7 +98,7 @@
 
 .flex-between {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
