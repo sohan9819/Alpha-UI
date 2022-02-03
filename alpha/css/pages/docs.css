@@ -90,7 +90,7 @@
   align-self: flex-start;
   background-image: linear-gradient(
       to bottom,
-      rgba(var(--color-rgb-cyan), 0.8),
+      rgba(var(--color-rgb-cyan), 1),
       rgba(var(--color-rgb-green), 1)
     ),
     url("../img/nat-4.jpg");
