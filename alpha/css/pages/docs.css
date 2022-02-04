@@ -21,6 +21,8 @@
   padding: 1rem;
   max-height: 90vh;
   overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   color: var(--color-white);
   font-family: var(--font-primary);
   background-color: rgba(var(--color-rgb-background-light), 0.5);
@@ -28,6 +30,8 @@
 
 .alpha-docs__main__article {
   overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .alpha-docs--primary {
@@ -86,7 +90,7 @@
   align-self: flex-start;
   background-image: linear-gradient(
       to bottom,
-      rgba(var(--color-rgb-cyan), 0.8),
+      rgba(var(--color-rgb-cyan), 1),
       rgba(var(--color-rgb-green), 1)
     ),
     url("../img/nat-4.jpg");
@@ -98,29 +102,6 @@
   flex-direction: column;
   gap: 1rem;
   color: var(--color-white);
-}
-
-.typography__table {
-  padding-inline-end: 1rem;
-  margin: 1rem;
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 40rem;
-}
-
-.typography__table-heading {
-  border: 1px solid var(--color-alpha);
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  text-align: center;
-  background-color: var(--color-background-light);
-  color: var(--color-white);
-}
-
-.typography__table-column {
-  text-align: center;
-  border: 1px solid var(--color-alpha);
-  padding: 0.8rem;
 }
 
 .component--margin {
@@ -165,8 +146,7 @@
       to bottom,
       rgba(var(--color-rgb-orange), 1),
       rgba(var(--color-rgb-red), 1)
-    ),
-    url("../img/nat-4.jpg");
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -194,3 +174,69 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+.avatar__type-block {
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar__type-name {
+  width: 100%;
+  text-align: center;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-orange), 1),
+      rgba(var(--color-rgb-yellow), 1)
+    );
+  }
+
+.avatar__type-demo {
+  width: 100%;
+  min-width: 22rem;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.avatar__code {
+  width: 100%;
+  max-width: 51rem;
+  min-width: 20rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.badge__type-name {
+  width: 100%;
+  text-align: center;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-white), 1),
+      rgba(var(--color-rgb-pink), 1)
+    ),
+    url("../img/nat-4.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.badge__demo {
+  width: 100%;
+  max-width: 40rem;
+  height: max-content;
+  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
