@@ -130,6 +130,51 @@
   );
 }
 
+.alert__demo-block {
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 60rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.alert__demo-title {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-orange), 1),
+      rgba(var(--color-rgb-red), 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+.alert__demo-alerts {
+  /* max-width: 80rem; */
+  width: 100%;
+  min-width: 40rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.alert__code {
+  margin-top: 3rem;
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 60rem;
+  min-width: 20rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .avatar__type-block {
   width: 100%;
   margin-top: 2rem;
@@ -149,12 +194,8 @@
       to bottom,
       rgba(var(--color-rgb-orange), 1),
       rgba(var(--color-rgb-yellow), 1)
-    ),
-    url("../img/nat-4.jpg");
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
+    );
+  }
 
 .avatar__type-demo {
   width: 100%;
@@ -198,3 +239,4 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+
