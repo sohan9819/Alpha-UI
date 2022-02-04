@@ -5,7 +5,7 @@
   padding: 0.8rem 1.2rem;
   margin: 1rem;
   background-color: var(--color-alpha);
-  /* border-radius: 0.6rem; */
+  border-radius: 0.6rem;
   box-shadow: 0 1rem 1.4rem rgba(var(--color-rgb-black), 0.2);
 }
 
