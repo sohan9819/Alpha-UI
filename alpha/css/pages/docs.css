@@ -184,3 +184,13 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.alert__code {
+  margin-top: 3rem;
+  overflow-x: scroll;
+  width: 100%;
+  max-width: 60rem;
+  min-width: 20rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
