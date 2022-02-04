@@ -143,9 +143,9 @@
   width: 100%;
   text-align: center;
   background-image: linear-gradient(
-      to bottom,
-      rgba(var(--color-rgb-orange), 1),
-      rgba(var(--color-rgb-red), 1)
+    to bottom,
+    rgba(var(--color-rgb-orange), 1),
+    rgba(var(--color-rgb-red), 1)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,11 +191,14 @@
   margin-left: 2rem;
   margin-bottom: 1rem;
   background-image: linear-gradient(
-      to bottom,
-      rgba(var(--color-rgb-orange), 1),
-      rgba(var(--color-rgb-yellow), 1)
-    );
-  }
+    to bottom,
+    rgba(var(--color-rgb-orange), 1),
+    rgba(var(--color-rgb-yellow), 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
 
 .avatar__type-demo {
   width: 100%;
@@ -239,4 +242,3 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
-
