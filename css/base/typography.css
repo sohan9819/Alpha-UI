@@ -75,3 +75,17 @@
 .ultrabold {
   font-weight: 700;
 }
+
+/* CASES  */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.captilize {
+  text-transform: capitalize;
+}
