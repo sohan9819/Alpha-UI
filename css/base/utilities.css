@@ -50,34 +50,31 @@
   border-radius: 50%;
 }
 
-/* BACKGROUND COLORS */
+/* BORDER WIDTH */
 
-.bg--color-white {
-  background-color: var(--color-white);
+.border--s {
+  border-width: 1px;
 }
-.bg--color-alpha {
-  background-color: var(--color-alpha);
+.border--m {
+  border-width: 2px;
 }
-.bg--color-cyan {
-  background-color: var(--color-cyan);
+.border--l {
+  border-width: 4px;
 }
-.bg--color-green {
-  background-color: var(--color-green);
+.border--xl {
+  border-width: 6px;
 }
-.bg--color-orange {
-  background-color: var(--color-orange);
+
+/* BORDER STYLE */
+
+.border--solid {
+  border-style: solid;
 }
-.bg--color-pink {
-  background-color: var(--color-pink);
+.border--dashed {
+  border-style: dashed;
 }
-.bg--color-purlple {
-  background-color: var(--color-purple);
-}
-.bg--color-red {
-  background-color: var(--color-red);
-}
-.bg--color-yellow {
-  background-color: var(--color-yellow);
+.border--dotted {
+  border-style: dotted;
 }
 
 /* FLEX */

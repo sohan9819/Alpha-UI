@@ -14,3 +14,140 @@
   background-color: rgba(var(--color-rgb-alpha), 0.8);
   box-shadow: 0 0.4rem 1.4rem rgba(var(--color-rgb-black), 0.2);
 }
+
+.btn--small {
+  padding: 0.8rem 1rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+.btn--medium {
+  padding: 1rem 1.4rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+.btn--large {
+  padding: 1.4rem 1.8rem;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+[class^="btn__basic"] {
+  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.15);
+}
+
+.btn__basic__alpha-text:hover,
+.btn__basic__alpha-outlined:hover {
+  background-color: rgba(var(--color-rgb-alpha), 0.4);
+}
+
+.btn__basic__alpha-contained:hover {
+  background-color: rgba(var(--color-rgb-alpha), 0.8);
+}
+
+.btn__basic__alpha-link:link,
+.btn__basic__alpha-link:visited {
+  color: var(--color-alpha);
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-alpha);
+  transition: all 0.2s;
+}
+
+.btn__basic__alpha-link:hover {
+  background-color: var(--color-alpha);
+  color: var(--color-white);
+  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.15);
+  transform: translateY(-2px);
+}
+.btn__basic__alpha-link:active {
+  box-shadow: 0 0.5rem 1rem rgba(var(--color-black), 0.15);
+  transform: translateY(0);
+}
+
+/* BUTTON BASIC STYLES  */
+
+.btn__basic-primary {
+  background-color: var(--color-blue-1);
+}
+.btn__basic-secondary {
+  background-color: var(--color-dark-grey-1);
+}
+.btn__basic-success {
+  background-color: var(--color-light-green-1);
+}
+.btn__basic-danger {
+  background-color: var(--color-red-1);
+}
+.btn__basic-warning {
+  background-color: var(--color-yellow-1);
+  color: var(--color-black);
+}
+.btn__basic-info {
+  background-color: var(--color-indigo-1);
+}
+.btn__basic-light {
+  background-color: var(--color-light-grey-1);
+  color: var(--color-black);
+}
+
+.btn__basic-primary:hover {
+  background-color: var(--color-blue-2);
+}
+.btn__basic-secondary:hover {
+  background-color: var(--color-dark-grey-2);
+}
+.btn__basic-success:hover {
+  background-color: var(--color-light-green-2);
+}
+.btn__basic-danger:hover {
+  background-color: var(--color-red-2);
+}
+.btn__basic-warning:hover {
+  background-color: var(--color-yellow-2);
+  color: var(--color-black);
+}
+.btn__basic-info:hover {
+  background-color: var(--color-indigo-2);
+}
+.btn__basic-light:hover {
+  background-color: var(--color-light-grey-2);
+  color: var(--color-black);
+}
+
+.btn__icon-s:link,
+.btn__icon-s:visited {
+  width: 2rem;
+  height: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon-m:link,
+.btn__icon-m:visited {
+  width: 4rem;
+  height: 4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__icon-l:link,
+.btn__icon-l:visited {
+  width: 6rem;
+  height: 6rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__icon-xl:link,
+.btn__icon-xl:visited {
+  width: 10rem;
+  height: 10rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

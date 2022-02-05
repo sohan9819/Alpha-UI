@@ -42,6 +42,9 @@
   --color-blue-1: #3498db;
   --color-blue-2: #2980b9;
 
+  --color-indigo-1: #17a2b8;
+  --color-indigo-2: #138496;
+
   --color-purple-1: #9b59b6;
   --color-purple-2: #8e44ad;
 
@@ -75,6 +78,9 @@
 
   --color-rgb-blue-1: 52, 152, 219;
   --color-rgb-blue-2: 41, 128, 185;
+
+  --color-rgb-indigo-1: 23, 162, 184;
+  --color-rgb-indigo-2: 19, 132, 150;
 
   --color-rgb-purple-1: 155, 89, 182;
   --color-rgb-purple-2: 142, 68, 173;

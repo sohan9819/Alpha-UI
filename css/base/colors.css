@@ -87,6 +87,12 @@
 .color-blue-2 {
   color: var(--color-blue-2);
 }
+.color-indigo-1 {
+  color: var(--color-indigo-1);
+}
+.color-indigo-2 {
+  color: var(--color-indigo-2);
+}
 .color-purple-1 {
   color: var(--color-purple-1);
 }
@@ -128,4 +134,282 @@
 }
 .color-light-grey-2 {
   color: var(--color-light-grey-2);
+}
+
+/* ######## BACKGROUND COLORS ######## */
+/* THEME COLORS  */
+
+/* --color-white: #f8f8f2;
+--color-alpha: #6272a4;
+--color-cyan: #8be9fd;
+--color-green: #50fa7b;
+--color-orange: #ffb86c;
+--color-pink: #ff79c6;
+--color-purple: #bd93f9;
+--color-red: #ff5555;
+--color-yellow: #f1fa8c; */
+
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-alpha {
+  background-color: var(--color-alpha);
+}
+.bg-cyan {
+  background-color: var(--color-cyan);
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+.bg-orange {
+  background-color: var(--color-orange);
+}
+.bg-pink {
+  background-color: var(--color-pink);
+}
+.bg-purple {
+  background-color: var(--color-purple);
+}
+.bg-red {
+  background-color: var(--color-red);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+.bg-black {
+  background-color: var(--color-black);
+}
+
+/* BASE COLORS  */
+
+/* --color-black: #000000;
+--color-rgb-black: 0, 0, 0;
+--color-dark-green-1: #1abc9c;
+--color-dark-green-2: #16a085;
+--color-light-green-1: #2ecc71;
+--color-light-green-2: #27ae60;
+--color-blue-1: #3498db;
+--color-blue-2: #2980b9;
+--color-purple-1: #9b59b6;
+--color-purple-2: #8e44ad;
+--color-dark-grey-1: #34495e;
+--color-dark-grey-2: #2c3e50;
+--color-yellow-1: #f1c40f;
+--color-yellow-2: #f39c12;
+--color-orange-1: #e67e22;
+--color-orange-2: #d35400;
+--color-red-1: #e74c3c;
+--color-red-2: #c0392b;
+--color-white-1: #ecf0f1;
+--color-white-2: #bdc3c7;
+--color-light-grey-1: #95a5a6;
+--color-light-grey-2: #7f8c8d; */
+
+.bg-black {
+  background-color: var(--color-black);
+}
+.bg-dark-green-1 {
+  background-color: var(--color-dark-green-1);
+}
+.bg-dark-green-2 {
+  background-color: var(--color-dark-green-2);
+}
+.bg-light-green-1 {
+  background-color: var(--color-light-green-2);
+}
+.bg-light-green-2 {
+  background-color: var(--color-light-green-2);
+}
+.bg-blue-1 {
+  background-color: var(--color-blue-1);
+}
+.bg-blue-2 {
+  background-color: var(--color-blue-2);
+}
+.bg-indigo-1 {
+  background-color: var(--color-indigo-1);
+}
+.bg-indigo-2 {
+  background-color: var(--color-indigo-2);
+}
+.bg-purple-1 {
+  background-color: var(--color-purple-1);
+}
+.bg-purple-2 {
+  background-color: var(--color-purple-2);
+}
+.bg-dark-grey-1 {
+  background-color: var(--color-dark-grey-1);
+}
+.bg-dark-grey-2 {
+  background-color: var(--color-dark-grey-2);
+}
+.bg-yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+.bg-yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+.bg-orange-1 {
+  background-color: var(--color-orange-1);
+}
+.bg-orange-2 {
+  background-color: var(--color-orange-2);
+}
+.bg-red-1 {
+  background-color: var(--color-red-1);
+}
+.bg-red-2 {
+  background-color: var(--color-red-2);
+}
+.bg-white-1 {
+  background-color: var(--color-white-1);
+}
+.bg-white-2 {
+  background-color: var(--color-white-2);
+}
+.bg-light-grey-1 {
+  background-color: var(--color-light-grey-1);
+}
+.bg-light-grey-2 {
+  background-color: var(--color-light-grey-2);
+}
+
+/* ######## BORDER COLORS ######## */
+/* THEME COLORS  */
+
+/* --color-white: #f8f8f2;
+--color-alpha: #6272a4;
+--color-cyan: #8be9fd;
+--color-green: #50fa7b;
+--color-orange: #ffb86c;
+--color-pink: #ff79c6;
+--color-purple: #bd93f9;
+--color-red: #ff5555;
+--color-yellow: #f1fa8c; */
+
+.border-white {
+  border-color: var(--color-white);
+}
+.border-alpha {
+  border-color: var(--color-alpha);
+}
+.border-cyan {
+  border-color: var(--color-cyan);
+}
+.border-green {
+  border-color: var(--color-green);
+}
+.border-orange {
+  border-color: var(--color-orange);
+}
+.border-pink {
+  border-color: var(--color-pink);
+}
+.border-purple {
+  border-color: var(--color-purple);
+}
+.border-red {
+  border-color: var(--color-red);
+}
+.border-yellow {
+  border-color: var(--color-yellow);
+}
+.border-black {
+  border-color: var(--color-black);
+}
+
+/* BASE COLORS  */
+
+/* --color-black: #000000;
+--color-rgb-black: 0, 0, 0;
+--color-dark-green-1: #1abc9c;
+--color-dark-green-2: #16a085;
+--color-light-green-1: #2ecc71;
+--color-light-green-2: #27ae60;
+--color-blue-1: #3498db;
+--color-blue-2: #2980b9;
+--color-purple-1: #9b59b6;
+--color-purple-2: #8e44ad;
+--color-dark-grey-1: #34495e;
+--color-dark-grey-2: #2c3e50;
+--color-yellow-1: #f1c40f;
+--color-yellow-2: #f39c12;
+--color-orange-1: #e67e22;
+--color-orange-2: #d35400;
+--color-red-1: #e74c3c;
+--color-red-2: #c0392b;
+--color-white-1: #ecf0f1;
+--color-white-2: #bdc3c7;
+--color-light-grey-1: #95a5a6;
+--color-light-grey-2: #7f8c8d; */
+
+.border-black {
+  border-color: var(--color-black);
+}
+.border-dark-green-1 {
+  border-color: var(--color-dark-green-1);
+}
+.border-dark-green-2 {
+  border-color: var(--color-dark-green-2);
+}
+.border-light-green-1 {
+  border-color: var(--color-light-green-2);
+}
+.border-light-green-2 {
+  border-color: var(--color-light-green-2);
+}
+.border-blue-1 {
+  border-color: var(--color-blue-1);
+}
+.border-blue-2 {
+  border-color: var(--color-blue-2);
+}
+.border--1 {
+  border-color: var(--color--1);
+}
+.border--2 {
+  border-color: var(--color--2);
+}
+.border-purple-1 {
+  border-color: var(--color-purple-1);
+}
+.border-purple-2 {
+  border-color: var(--color-purple-2);
+}
+.border-dark-grey-1 {
+  border-color: var(--color-dark-grey-1);
+}
+.border-dark-grey-2 {
+  border-color: var(--color-dark-grey-2);
+}
+.border-yellow-1 {
+  border-color: var(--color-yellow-1);
+}
+.border-yellow-2 {
+  border-color: var(--color-yellow-2);
+}
+.border-orange-1 {
+  border-color: var(--color-orange-1);
+}
+.border-orange-2 {
+  border-color: var(--color-orange-2);
+}
+.border-red-1 {
+  border-color: var(--color-red-1);
+}
+.border-red-2 {
+  border-color: var(--color-red-2);
+}
+.border-white-1 {
+  border-color: var(--color-white-1);
+}
+.border-white-2 {
+  border-color: var(--color-white-2);
+}
+.border-light-grey-1 {
+  border-color: var(--color-light-grey-1);
+}
+.border-light-grey-2 {
+  border-color: var(--color-light-grey-2);
 }
