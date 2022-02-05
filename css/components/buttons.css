@@ -31,21 +31,23 @@
   transition: all 0.2s ease;
 }
 
-[class^="btn__basic"] {
-  box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.15);
-}
-
-.btn__basic__alpha-text:hover,
-.btn__basic__alpha-outlined:hover {
+.btn__alpha-text:hover,
+.btn__alpha-outlined:hover {
   background-color: rgba(var(--color-rgb-alpha), 0.4);
 }
 
-.btn__basic__alpha-contained:hover {
-  background-color: rgba(var(--color-rgb-alpha), 0.8);
+.btn__alpha-contained,
+.btn__alpha-outlined {
+  box-shadow: 0 1rem 1.4rem rgba(var(--color-rgb-black), 0.2);
 }
 
-.btn__basic__alpha-link:link,
-.btn__basic__alpha-link:visited {
+.btn__alpha-contained:hover {
+  background-color: rgba(var(--color-rgb-alpha), 0.8);
+  box-shadow: 0 0.4rem 1.4rem rgba(var(--color-rgb-black), 0.2);
+}
+
+.btn__alpha-link:link,
+.btn__alpha-link:visited {
   color: var(--color-alpha);
   display: inline-block;
   text-decoration: none;
@@ -53,13 +55,13 @@
   transition: all 0.2s;
 }
 
-.btn__basic__alpha-link:hover {
+.btn__alpha-link:hover {
   background-color: var(--color-alpha);
   color: var(--color-white);
   box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.15);
   transform: translateY(-2px);
 }
-.btn__basic__alpha-link:active {
+.btn__alpha-link:active {
   box-shadow: 0 0.5rem 1rem rgba(var(--color-black), 0.15);
   transform: translateY(0);
 }

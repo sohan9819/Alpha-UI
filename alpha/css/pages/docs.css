@@ -28,10 +28,18 @@
   background-color: rgba(var(--color-rgb-background-light), 0.5);
 }
 
+.alpha-docs__main__aside::-webkit-scrollbar {
+  display: none;
+}
+
 .alpha-docs__main__article {
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.alpha-docs__main__article::-webkit-scrollbar {
+  display: none;
 }
 
 .alpha-docs--primary {
@@ -182,7 +190,9 @@
   width: 100%;
   margin-top: 2rem;
   max-width: 60rem;
-  overflow: scroll;
+  min-width: 20rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -255,14 +265,13 @@
 
 .button__demo-buttons {
   width: 100%;
-  min-width: 40rem;
+  min-width: 20rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 2rem;
-
   padding: 2rem;
   margin: 2rem 0rem;
 }
@@ -283,8 +292,9 @@
 }
 
 .button__code {
-  width: max-content;
+  width: 100%;
   max-width: 60rem;
   min-width: 20rem;
   margin: auto;
+  overflow: auto;
 }
