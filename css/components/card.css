@@ -1,0 +1,194 @@
+.card {
+  width: 35rem;
+  height: max-content;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2);
+}
+
+.card__basic {
+  display: grid;
+  grid-template-rows: 2;
+}
+.card__basic__text-over-media .card__content-box {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+.card__basic__text-over-media .card__content-box--image {
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+}
+.card__basic__text-over-media .card__heading {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  margin-bottom: 0;
+  color: white;
+  margin-bottom: 0;
+}
+.card__basic__text-over-media .card__text {
+  margin-top: 2rem;
+}
+.card__basic__header .card__content-box {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto auto;
+}
+.card__basic__header .card__content-box--image {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+.card__basic__header .card__heading {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  margin-bottom: 0;
+  margin-bottom: 0;
+}
+.card__basic__header .card__text {
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
+  margin-top: 2rem;
+}
+.card__basic__only-buttons .card__content-box {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+.card__basic__only-buttons .card__links {
+  justify-content: start;
+}
+.card__basic__only-buttons .card__links .card__icons {
+  display: none;
+}
+.card__basic__only-icons .card__content-box {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+.card__basic__only-icons .card__links {
+  justify-content: flex-end;
+}
+.card__basic__only-icons .card__links .card__buttons {
+  display: none;
+}
+.card__horizontal-image-and-text {
+  display: grid;
+  grid-template-rows: 12rem auto;
+  grid-template-columns: auto;
+}
+.card__horizontal-image-and-text .card__content-box {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.card__horizontal-image-and-text .card__content-box--image {
+  height: 100%;
+  border-start-end-radius: 0.4rem;
+}
+.card__horizontal-image-and-text .card__text {
+  display: none;
+}
+
+.card__content-box {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card__content-box:hover {
+  background-color: rgba(220, 220, 220, 0.2);
+}
+.card__content-box::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.4);
+  opacity: 0;
+  z-index: -1;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: rgba(180, 179, 179, 0.2);
+  transition: all 0.2s ease-out;
+}
+.card__content-box:active::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(3);
+}
+.card__content-box--image {
+  height: 20rem;
+  width: 100%;
+  /* background-image: url("https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg");
+  background-size: cover; */
+  display: inline-block;
+}
+/* .card__heading {
+  padding: 2rem 1.4rem;
+}
+
+.card__heading--sub {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0.6rem;
+  color: gray;
+} */
+.card__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0rem 1.4rem 0rem 1.4rem;
+  color: gray;
+  line-height: 2rem;
+  letter-spacing: 0.6px;
+}
+.card__content-box::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card__links {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__links .card__buttons {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 0rem 1rem 0rem 0rem;
+}
+.card__links .card__button {
+  text-decoration: none;
+  color: #8a2be2;
+  padding: 0.8rem 1rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card__links .card__button:hover,
+.card__links .card__button:focus {
+  background: rgba(177, 109, 240, 0.357);
+}
+.card__links .card__icons {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+.card__links .card__icons--heart,
+.card__links .card__icons--share,
+.card__links .card__icons--options {
+  position: relative;
+  color: gray;
+}
+
+.card__links .card__icons--heart:active,
+.card__links .card__icons--share:active,
+.card__links .card__icons--options:active {
+  color: gray;
+}
