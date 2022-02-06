@@ -301,11 +301,17 @@
 
 .card__demo {
   width: 100%;
+  max-width: 60rem;
+  min-width: 20rem;
   position: relative;
   padding: 1rem;
+  overflow-x: scroll;
 }
 
 #card__option {
+  width: 100%;
+  min-width: 20rem;
+  max-width: 30rem;
   border: none;
   padding: 1rem;
   font-family: var(--font-primary);

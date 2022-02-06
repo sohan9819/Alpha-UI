@@ -22,9 +22,6 @@
 .card__basic__text-over-media .card__heading {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  margin-bottom: 0;
-  color: white;
-  margin-bottom: 0;
 }
 .card__basic__text-over-media .card__text {
   margin-top: 2rem;
