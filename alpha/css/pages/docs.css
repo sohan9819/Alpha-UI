@@ -36,6 +36,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 .alpha-docs__main__article::-webkit-scrollbar {
