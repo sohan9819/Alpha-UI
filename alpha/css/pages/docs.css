@@ -331,3 +331,24 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+
+.image__demo-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--color-rgb-cyan), 1),
+      rgba(var(--color-rgb-blue-1), 1)
+    ),
+    url("../img/nat-4.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.img__demo-block {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

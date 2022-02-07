@@ -9,6 +9,41 @@
   background: transparent !important; /* Optional: just make scrollbar invisible */
 }
 
+/* width */
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.w-min {
+  width: min-content;
+}
+
+.w-auto {
+  width: auto;
+}
+/* width */
+
+.h-full {
+  height: 100%;
+}
+
+.h-max {
+  height: max-content;
+}
+
+.h-min {
+  height: min-content;
+}
+
+.h-auto {
+  height: auto;
+}
+
 /* MARGIN */
 
 .m-auto {
@@ -298,8 +333,86 @@
   flex-wrap: nowrap;
 }
 
-/* #### align-items #### */
+/* #### grid #### */
 
 .grid {
   display: grid;
+}
+
+/* #### grid #### */
+
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+
+/* #### object-fit #### */
+
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-fill {
+  object-fit: fill;
+}
+
+/* #### object-position #### */
+
+.object-bottom {
+  object-position: bottom;
+}
+.object-center {
+  object-position: center;
+}
+.object-left {
+  object-position: left;
+}
+.object-left-bottom {
+  object-position: left bottom;
+}
+.object-left-top {
+  object-position: left top;
+}
+.object-right {
+  object-position: right;
+}
+.object-right-bottom {
+  object-position: right bottom;
+}
+.object-right-top {
+  object-position: right top;
+}
+.object-top {
+  object-position: top;
+}
+
+/* #### object-hidden #### */
+
+.overflow-x {
+  overflow-x: scroll !important;
+}
+.overflow-y {
+  overflow-y: scroll !important;
+}
+.overflow-x-hide {
+  overflow-x: hidden !important;
+}
+.overflow-y-hide {
+  overflow-y: hidden !important;
+}
+.overflow-scroll {
+  overflow: scroll !important;
+}
+.overflow-hide {
+  overflow: hidden !important;
 }
