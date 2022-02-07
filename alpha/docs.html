@@ -63,6 +63,7 @@
             <a href="#button" class="h--primary h4"># Button</a>
             <a href="#card" class="h--primary h4"># Card</a>
             <a href="#image" class="h--primary h4"># Image</a>
+            <a href="#inputs" class="h--primary h4"># Input</a>
           </div>
         </aside>
         <article class="alpha-docs__main__article">
@@ -1078,7 +1079,7 @@
           </div>
 
           <!-- ######################### -->
-          <!-- ##### COMPONENT BLOCK : CARDS #### -->
+          <!-- ##### COMPONENT BLOCK : IMAGE #### -->
 
           <div
             class="component--block component--typography flex justify-center items-center"
@@ -1121,6 +1122,109 @@
                 </iframe>
               </div>
             </div>
+          </div>
+
+          <!-- ######################### -->
+          <!-- ##### COMPONENT BLOCK : IMAGE #### -->
+
+          <div
+            class="component--block component--typography flex justify-center items-center"
+          >
+            <h2 id="inputs" class="component--title h2"># Inputs</h2>
+
+            <!-- ##### COMPONENT BLOCK : IMAGE TYPES #### -->
+
+            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center">
+              <h3 class="input__demo-title h3 mt-1"># Text Inputs</h3>
+              <div
+                class="img__demo-block m-1 scroll-hide h-max w-full flex justify-center items-center flex-wrap flex-col p-1"
+              >
+
+                <div class="input__text-group">
+                  <input
+                  type="text"
+                  class="input__text-input"
+                  placeholder="Full Name"
+                  id="name"
+                  required
+                  />
+                  <label for="name" class="input__text-label">Full name</label>
+                </div>
+
+                <div class="input__text-group">
+                  <input
+                    type="email"
+                    class="input__text-input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="input__text-label">Email</label>
+                  <div class="h5 input__error color-red"><i>Must be a valid email address.</i></div>
+                </div>
+
+                <div class="input__text-group">
+                  <input
+                    type="password"
+                    class="input__text-input"
+                    placeholder="Password"
+                    id="email"
+                    required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                  />
+                  <label for="email" class="input__text-label">Password</label>
+                  <div class="h5 input__error color-red"><i>Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</i></div>
+                </div>
+              </div>
+              <div class="button__code scroll-hide">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520TEXT%2520INPUTS%2520%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520type%253D%2522text%2522%250A%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520placeholder%253D%2522Full%2520Name%2522%250A%2520%2520id%253D%2522name%2522%250A%2520%2520required%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Full%2520name%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520%2520%2520placeholder%253D%2522Email%2520address%2522%250A%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520required%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Email%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522h5%2520input__error%2520color-red%2522%253E%250A%2520%2520%2520%2520%253Ci%253EMust%2520be%2520a%2520valid%2520email%2520address.%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520required%250A%2520%2520%2520%2520pattern%253D%2522%28%253F%253D.*%255Cd%29%28%253F%253D.*%255Ba-z%255D%29%28%253F%253D.*%255BA-Z%255D%29.%257B6%252C%257D%2522%2520%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Password%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522h5%2520input__error%2520color-red%2522%253E%250A%2520%2520%2520%2520%253Ci%253EYour%2520password%2520must%2520be%2520at%2520least%25206%2520characters%2520as%2520well%2520as%2520contain%2520at%2520least%2520one%2520uppercase%252C%2520one%2520lowercase%252C%2520and%2520one%2520number.%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                  style="width: 578px; height: 1118px; border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+            </div>
+            
+            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center ">
+              <h3 class="input__demo-title h3 mt-1"># Radio Inputs</h3>
+              <div
+                class="img__demo-block m-1 scroll-hide h-max w-full flex justify-center items-center flex-wrap flex-col p-1"
+              >
+                  <div class="input__radio-group mt-1">
+                    <input
+                      type="radio"
+                      class="input__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="input__radio-label h4 color-purple">
+                      <span class="input__radio-button"></span>
+                      Radio Input 1
+                    </label>
+                  </div>
+
+                  <div class="input__radio-group">
+                    <input
+                      type="radio"
+                      class="input__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="input__radio-label h4 color-purple">
+                      <span class="input__radio-button"></span>
+                      Radio Input 2
+                    </label>
+                  </div>      
+              </div>
+              <div class="button__code scroll-hide">
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520RADIO%2520INPUTS%2520%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522input__radio-group%2520mt-1%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520class%253D%2522input__radio-input%2522%250A%2520%2520%2520%2520id%253D%2522small%2522%250A%2520%2520%2520%2520name%253D%2522size%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522small%2522%2520class%253D%2522input__radio-label%2520h4%2520color-purple%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input__radio-button%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520Radio%2520Input%25201%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__radio-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520class%253D%2522input__radio-input%2522%250A%2520%2520%2520%2520id%253D%2522large%2522%250A%2520%2520%2520%2520name%253D%2522size%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522large%2522%2520class%253D%2522input__radio-label%2520h4%2520color-purple%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input__radio-button%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520Radio%2520Input%25202%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%2520"
+                  style="width: 578px; height: 746px; border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+            </div>
+
           </div>
 
           <!-- ######################### -->
