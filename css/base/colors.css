@@ -69,6 +69,9 @@
 .color-black {
   color: var(--color-black);
 }
+.color-grey {
+  color: var(--color-grey);
+}
 .color-dark-green-1 {
   color: var(--color-dark-green-1);
 }
@@ -208,6 +211,9 @@
 .bg-black {
   background-color: var(--color-black);
 }
+.bg-grey {
+  background-color: var(--color-grey);
+}
 .bg-dark-green-1 {
   background-color: var(--color-dark-green-1);
 }
@@ -346,6 +352,9 @@
 
 .border-black {
   border-color: var(--color-black);
+}
+.border-grey {
+  border-color: var(--color-grey);
 }
 .border-dark-green-1 {
   border-color: var(--color-dark-green-1);
