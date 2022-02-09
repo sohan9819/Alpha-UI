@@ -8,8 +8,8 @@
       name="og:description"
       content="UI Component Library based on dark theme first approach"
     />
-
     <meta property="og:image" content="../assets/images/logo.svg" />
+
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -17,12 +17,22 @@
       type="image/png"
       href="../assets/images/logo.svg"
     />
+
+    <!-- Highlight Js Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/base16/dracula.min.css"
+      integrity="sha512-zKpFlhUX8c+WC6H/XTJavnEpWFt2zH9BU9vu0Hry5Y+SEgG21pRMFcecS7DgDXIegXBQ3uK9puwWPP3h6WSR9g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>ALPHA:docs</title>
   </head>
   <body>
     <div class="alpha">
       <!-- ##### NAV BAR #### -->
-      <nav class="alpha__nav p-1">
+      <nav class="alpha__nav p-1 flex justify-between items-center">
         <h2 class="alpha__nav--logo h3">
           <a href="../index.html" class="alpha__nav--logo-main">ALPHA</a>
           &nbsp;UI
@@ -67,8 +77,8 @@
             <a href="#inputs" class="h--primary h4"># Input</a>
           </div>
         </aside>
-        <article class="alpha-docs__main__article">
-          <div class="alpha-docs__intro">
+        <article class="alpha-docs__main__article w-full overflow-x-hide">
+          <div class="alpha-docs__intro pt-2 m-auto">
             <img
               src="../assets/images/logo.svg"
               alt="logo"
@@ -78,20 +88,21 @@
             <h3 class="alpha__version h3">V 1.0</h3>
           </div>
 
-          <!-- ######### COMPONENT BLOCK : TYPOGRAPHY ######## -->
+        <!-- #### COMPONENT BLOCK : TYPOGRAPHY #### -->
 
           <!-- ##### COMPONENT BLOCK : HEADING #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="headings" class="component--title h2"># Headings</h2>
-            <h1 class="h1">Hello world</h1>
-            <h2 class="h2">Hello world</h2>
-            <h3 class="h3">Hello world</h3>
-            <h4 class="h4">Hello world</h4>
-            <h5 class="h5">Hello world</h5>
-            <h6 class="h6">Hello world</h6>
-            <table class="table">
+            <h2 id="headings" class="main__component--heading h2 ml-2 w-full"># Headings</h2>
+            <h1 class="w-full text-center color-white h1 m-1">Hello world</h1>
+            <h2 class="w-full text-center color-white h2 m-1">Hello world</h2>
+            <h3 class="w-full text-center color-white h3 m-1">Hello world</h3>
+            <h4 class="w-full text-center color-white h4 m-1">Hello world</h4>
+            <h5 class="w-full text-center color-white h5 m-1">Hello world</h5>
+            <h6 class="w-full text-center color-white h6 m-1">Hello world</h6>
+            <div class="component--table w-full flex justify-center items-center">
+            <table class="table color-white">
               <tr class="table-row">
                 <th class="table-heading h3">Class</th>
                 <th class="table-heading h3">Font-size</th>
@@ -128,249 +139,269 @@
                 <td class="table-column h4">1.2rem</td>
               </tr>
             </table>
-            <h3 class="input__demo-title h2 mt-1"># Grey Texts </h3>
-            <div class="heading__type-name h4 color-grey">
+          </div>
+            <h3 class="heading__component-title h2 w-full text-center mt-2"># Grey Texts </h3>
+            <div class="w-full text-center h4 color-grey">
               color-grey
             </div>
-            <div class="heading__type-name h4 color-light-grey-1">
+            <div class="w-full text-center h4 color-light-grey-1">
               color-light-grey-1
             </div>
-            <div class="heading__type-name h4 color-light-grey-2">
+            <div class="w-full text-center h4 color-light-grey-2">
               color-light-grey-2
             </div>
-            <div class="heading__type-name h4 color-dark-grey-1">
+            <div class="w-full text-center h4 color-dark-grey-1">
               color-dark-grey-1
             </div>
-            <div class="heading__type-name h4 color-dark-grey-1">
+            <div class="w-full text-center h4 color-dark-grey-1">
               color-dark-grey-2
             </div>
 
-            <h3 class="input__demo-title h2 mt-1"># Text aligns </h3>
+            <h3 class="heading__component-title h2 w-full text-center mt-2"># Text aligns </h3>
 
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">text-align</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-center</td>
-                <td class="table-column h4">center</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-left</td>
-                <td class="table-column h4">left</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-right</td>
-                <td class="table-column h4">right</td>
-              </tr>
-            </table>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">text-align</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-center</td>
+                  <td class="table-column h4">center</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-left</td>
+                  <td class="table-column h4">left</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-right</td>
+                  <td class="table-column h4">right</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : PARAGRAPH #### -->
-
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="paragraphs" class="component--title h2"># Paragraphs</h2>
-            <p class="text-1">Hello texts</p>
-            <p class="text-2">Hello texts</p>
-            <p class="text-3">Hello texts</p>
-            <p class="text-4">Hello texts</p>
-            <p class="text-5">Hello texts</p>
-            <p class="text-6">Hello texts</p>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">Font-size</th>
-                <th class="table-heading h3">Line-height</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-1</td>
-                <td class="table-column h4">4.8rem</td>
-                <td class="table-column h4">6.4rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-2</td>
-                <td class="table-column h4">3.2rem</td>
-                <td class="table-column h4">4rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-3</td>
-                <td class="table-column h4">2.4rem</td>
-                <td class="table-column h4">3.2rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-4</td>
-                <td class="table-column h4">1.6rem</td>
-                <td class="table-column h4">2.4rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-5</td>
-                <td class="table-column h4">1.2rem</td>
-                <td class="table-column h4">1.6rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">text-6</td>
-                <td class="table-column h4">0.8rem</td>
-                <td class="table-column h4">1.2rem</td>
-              </tr>
-            </table>
+            <h2 id="paragraphs" class="main__component--heading h2 ml-2 w-full"># Paragraphs</h2>
+            <p class="w-full text-center color-white text-1 m-1">Hello texts</p>
+            <p class="w-full text-center color-white text-2 m-1">Hello texts</p>
+            <p class="w-full text-center color-white text-3 m-1">Hello texts</p>
+            <p class="w-full text-center color-white text-4 m-1">Hello texts</p>
+            <p class="w-full text-center color-white text-5 m-1">Hello texts</p>
+            <p class="w-full text-center color-white text-6 m-1">Hello texts</p>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">Font-size</th>
+                  <th class="table-heading h3">Line-height</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-1</td>
+                  <td class="table-column h4">4.8rem</td>
+                  <td class="table-column h4">6.4rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-2</td>
+                  <td class="table-column h4">3.2rem</td>
+                  <td class="table-column h4">4rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-3</td>
+                  <td class="table-column h4">2.4rem</td>
+                  <td class="table-column h4">3.2rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-4</td>
+                  <td class="table-column h4">1.6rem</td>
+                  <td class="table-column h4">2.4rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-5</td>
+                  <td class="table-column h4">1.2rem</td>
+                  <td class="table-column h4">1.6rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">text-6</td>
+                  <td class="table-column h4">0.8rem</td>
+                  <td class="table-column h4">1.2rem</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : FONT WEIGHT #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="font-weight" class="component--title h2"># Font-weight</h2>
-            <h1 class="light h2">Hello world</h1>
-            <h2 class="regular h2">Hello world</h2>
-            <h3 class="semibold h2">Hello world</h3>
-            <h4 class="bold h2">Hello world</h4>
-            <h5 class="ultrabold h2">Hello world</h5>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">Font-weight</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">light</td>
-                <td class="table-column h4">100</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">regular</td>
-                <td class="table-column h4">200</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">semibold</td>
-                <td class="table-column h4">400</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">bold</td>
-                <td class="table-column h4">600</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">ultrabold</td>
-                <td class="table-column h4">700</td>
-              </tr>
-            </table>
+            <h2 id="font-weight" class="main__component--heading h2 ml-2 w-full"># Font-weight</h2>
+            <h1 class="w-full text-center color-white light h2">Hello world</h1>
+            <h2 class="w-full text-center color-white regular h2">Hello world</h2>
+            <h3 class="w-full text-center color-white semibold h2">Hello world</h3>
+            <h4 class="w-full text-center color-white bold h2">Hello world</h4>
+            <h5 class="w-full text-center color-white ultrabold h2">Hello world</h5>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">Font-weight</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">light</td>
+                  <td class="table-column h4">100</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">regular</td>
+                  <td class="table-column h4">200</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">semibold</td>
+                  <td class="table-column h4">400</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">bold</td>
+                  <td class="table-column h4">600</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">ultrabold</td>
+                  <td class="table-column h4">700</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
 
-          <!-- ##### COMPONENT BLOCK : UTILITY #### -->
+        <!-- ##### COMPONENT BLOCK : UTILITY #### -->
 
           <!-- ##### COMPONENT BLOCK : MARGINS #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="margins" class="component--title h2"># Margins</h2>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">Margin</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m-1</td>
-                <td class="table-column h4">1rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m-2</td>
-                <td class="table-column h4">2rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m-4</td>
-                <td class="table-column h4">4rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m-6</td>
-                <td class="table-column h4">6rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m-8</td>
-                <td class="table-column h4">8rem</td>
-              </tr>
-            </table>
+            <h2 id="margins" class="main__component--heading h2 ml-2 w-full"># Margins</h2>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">Margin</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m-1</td>
+                  <td class="table-column h4">1rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m-2</td>
+                  <td class="table-column h4">2rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m-4</td>
+                  <td class="table-column h4">4rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m-6</td>
+                  <td class="table-column h4">6rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m-8</td>
+                  <td class="table-column h4">8rem</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : PADDINGS #### -->
           <div 
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="paddings" class="component--title h2"># Paddings</h2>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">Padding</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">p-1</td>
-                <td class="table-column h4">1rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">p-2</td>
-                <td class="table-column h4">2rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">p-4</td>
-                <td class="table-column h4">4rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">p-6</td>
-                <td class="table-column h4">6rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">p-8</td>
-                <td class="table-column h4">8rem</td>
-              </tr>
-            </table>
+            <h2 id="paddings" class="main__component--heading h2 ml-2 w-full"># Paddings</h2>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">Padding</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">p-1</td>
+                  <td class="table-column h4">1rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">p-2</td>
+                  <td class="table-column h4">2rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">p-4</td>
+                  <td class="table-column h4">4rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">p-6</td>
+                  <td class="table-column h4">6rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">p-8</td>
+                  <td class="table-column h4">8rem</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
+
           <!-- ##### COMPONENT BLOCK : BORDER RADIUS #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <a id="border-radius" class="component--title h2"># Border-radius</a>
-            <div class="border-rd__demo flex justify-center items-center">
-              <div class="border-rd__examples border--rad-s"></div>
-              <div class="border-rd__examples border--rad-m"></div>
-              <div class="border-rd__examples border--rad-l"></div>
-              <div class="border-rd__examples border--rad-f"></div>
+            <h2 id="border-radius" class="main__component--heading h2 ml-2 w-full "># Border-radius</h2>
+            <div class="w-full mt-1 flex justify-center items-center gap-2 flex-wrap">
+              <div class="border-rd__examples rounded-s"></div>
+              <div class="border-rd__examples rounded-m"></div>
+              <div class="border-rd__examples rounded-l"></div>
+              <div class="border-rd__examples rounded-f"></div>
             </div>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Class</th>
-                <th class="table-heading h3">Radius</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">border--rad-s</td>
-                <td class="table-column h4">0.5rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">border--rad-m</td>
-                <td class="table-column h4">1rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">border--rad-l</td>
-                <td class="table-column h4">1.5rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">border--rad-f</td>
-                <td class="table-column h4">50%</td>
-              </tr>
-            </table>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Class</th>
+                  <th class="table-heading h3">Radius</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">rounded-s</td>
+                  <td class="table-column h4">0.5rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">rounded-m</td>
+                  <td class="table-column h4">1rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">rounded-l</td>
+                  <td class="table-column h4">1.5rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">rounded-f</td>
+                  <td class="table-column h4">50%</td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <!-- ######################### -->
 
-          <!-- ##### COMPONENT BLOCK : COMPONENTS #### -->
+<!-- ##### COMPONENT BLOCK : COMPONENTS #### -->
 
           <!-- ##### COMPONENT BLOCK : AVATAR #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="avatar" class="component--title h2"># Avatar</h2>
-            <div class="avatar__type-block flex justify-center items-center">
-              <h3 class="avatar__type-name h3"># Avatar Basic</h3>
+            <h2 id="avatar" class="main__component--heading h2 ml-2 w-full "># Avatar</h2>
+            
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Basic</h3>
               <div
-                class="avatar__type-demo flex justify-center items-center flex-wrap"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1"
               >
-                <div class="avatar__basic-s border--rad-f">
+                <div class="avatar__basic-s rounded-f">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_3.jpg"
@@ -381,7 +412,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-m border--rad-f">
+                <div class="avatar__basic-m rounded-f">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_5.jpg"
@@ -392,7 +423,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-l border--rad-f">
+                <div class="avatar__basic-l rounded-f">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_1.jpg"
@@ -403,7 +434,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-xl border--rad-f">
+                <div class="avatar__basic-xl rounded-f">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_4.jpg"
@@ -416,27 +447,68 @@
                 </div>
               </div>
 
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520AVATAR%2520%253A%2520small%2520%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-s%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520AVATAR%2520%253A%2520medium%2520%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-m%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520AVATAR%2520%253A%2520large%2520%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520AVATAR%2520%253A%2520extra-large%2520%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-xl%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
-                  style="
-                    width: 510px;
-                    height: 1000px;
-                    border: 0;
-                    transform: scale(1);
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen">
+                
+&lt!-- ##### AVATAR : small #### -->
+&ltdiv class="avatar__basic-s rounded-f">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_3.jpg"
+    srcset="
+      ../assets/images/face_3.jpg 1x,
+      ../assets/images/face_3.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+
+&lt!-- ##### AVATAR : medium #### -->
+&ltdiv class="avatar__basic-m rounded-f">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_5.jpg"
+    srcset="
+      ../assets/images/face_5.jpg 1x,
+      ../assets/images/face_5.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+
+&lt!-- ##### AVATAR : large #### -->
+&ltdiv class="avatar__basic-l rounded-f">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_1.jpg"
+    srcset="
+      ../assets/images/face_1.jpg 1x,
+      ../assets/images/face_1.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+
+&lt!-- ##### AVATAR : extra-large #### -->
+&ltdiv class="avatar__basic-xl rounded-f">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_4.jpg"
+    srcset="
+      ../assets/images/face_4.jpg 1x,
+      ../assets/images/face_4.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+              </code></pre>
             </div>
 
-            <div class="avatar__type-block flex justify-center items-center">
-              <h3 class="avatar__type-name h3"># Avatar Variants</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Variants</h3>
               <div
-                class="avatar__type-demo flex justify-center items-center flex-wrap"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1"
               >
-                <div class="avatar__basic-l border--rad-s">
+                <div class="avatar__basic-l rounded-s">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_3.jpg"
@@ -447,7 +519,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-l border--rad-m">
+                <div class="avatar__basic-l rounded-m">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_1.jpg"
@@ -458,7 +530,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-l border--rad-l">
+                <div class="avatar__basic-l rounded-l">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_5.jpg"
@@ -469,7 +541,7 @@
                     alt="face demo"
                   />
                 </div>
-                <div class="avatar__basic-l border--rad-f">
+                <div class="avatar__basic-l rounded-f">
                   <img
                     class="avatar__img"
                     src="../assets/images/face_4.jpg"
@@ -482,159 +554,225 @@
                 </div>
               </div>
 
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520small%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-s%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520medium%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-m%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520large%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-l%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520full%2520rounded%2520border%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
-                  style="
-                    width: 510px;
-                    height: 1118px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                    display: none;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen">
+&lt!-- ##### 
+AVATAR : small rounded border 
+#### -->
+&ltdiv class="avatar__basic-l rounded-s">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_3.jpg"
+    srcset="
+      ../assets/images/face_3.jpg 1x,
+      ../assets/images/face_3.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
 
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520small%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-s%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520medium%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-m%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520large%2520rounded%2520border%2520%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-l%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520%253A%2520full%2520rounded%2520border%250A%2523%2523%2523%2523%2520--%253E%250A%253Cdiv%2520class%253D%2522avatar__basic-l%2520border-f%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar__img%2522%250A%2520%2520%2520%2520src%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%2522%250A%2520%2520%2520%2520srcset%253D%2522..%252Fassets%252Fimages%252Fface_1.jpg%25201x%252C%2520..%252Fassets%252Fimages%252Fface_1.jpg%25202x%2522%250A%2520%2520%2520%2520alt%253D%2522face%2520demo%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
-                  style="
-                    width: 510px;
-                    height: 1118px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
+&lt!-- ##### 
+AVATAR : medium rounded border 
+#### -->
+&ltdiv class="avatar__basic-l rounded-m">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_1.jpg"
+    srcset="
+      ../assets/images/face_1.jpg 1x,
+      ../assets/images/face_1.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+
+&lt!-- ##### 
+AVATAR : large rounded border 
+#### -->
+&ltdiv class="avatar__basic-l rounded-l">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_5.jpg"
+    srcset="
+      ../assets/images/face_5.jpg 1x,
+      ../assets/images/face_5.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+
+&lt!-- ##### 
+AVATAR : full rounded border
+#### -->
+&ltdiv class="avatar__basic-l rounded-f">
+  &ltimg
+    class="avatar__img"
+    src="../assets/images/face_4.jpg"
+    srcset="
+      ../assets/images/face_4.jpg 1x,
+      ../assets/images/face_4.jpg 2x
+    "
+    alt="face demo"
+  />
+&lt/div>
+              </code></pre>
             </div>
 
-            <div class="avatar__type-block flex justify-center items-center">
-              <h3 class="avatar__type-name h3"># Avatar Text/Icon</h3>
+            <div class="w-full flex justify-center items-center flex-col">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Text/Icon</h3>
               <div
-                class="avatar__type-demo flex justify-center items-center flex-wrap"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
-                <div class="avatar__text-m border--rad-f bg-pink">
+                <div class="avatar__text-m rounded-f bg-pink">
                   <h2 class="h2">AT</h2>
                 </div>
-                <div class="avatar__text-m border--rad-s bg-alpha">
+                <div class="avatar__text-m rounded-s bg-alpha">
                   <h2 class="h2">AT</h2>
                 </div>
-                <div class="avatar__text-m border--rad-l bg-red">
+                <div class="avatar__text-m rounded-l bg-red">
                   <i
                     class="feature-box__icon icon-basic-world h1 flex justify-center items-center"
                   ></i>
                 </div>
-                <div class="avatar__text-m border--rad-f bg-orange">
+                <div class="avatar__text-m rounded-f bg-orange">
                   <i
                     class="feature-box__icon icon-basic-compass h1 flex justify-center items-center"
                   ></i>
                 </div>
               </div>
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AAVATAR%2520TEXT%2520%252F%2520ICONS%2520%250AIcons%2520are%2520from%2520linea%2520fonts%2520which%2520comes%2520integrated%2520with%2520this%2520library%2520.%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522avatar__text-m%2520border-f%2520bg-pink%2522%253E%250A%2520%2520%253Ch2%2520class%253D%2522h2%2522%253EAT%253C%252Fh2%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar__text-m%2520border-s%2520bg-alpha%2522%253E%250A%2520%2520%253Ch2%2520class%253D%2522h2%2522%253EAT%253C%252Fh2%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar__text-m%2520border-l%2520bg-red%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-world%2520h1%2520flex-center%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar__text-m%2520border-f%2520bg-orange%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-compass%2520h1%2520flex-center%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A"
-                  style="
-                    width: 510px;
-                    height: 707px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
+              
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+AVATAR TEXT / ICONS 
+Icons are from linea fonts which comes integrated with this library . 
+#### -->
+&ltdiv class="avatar__text-m rounded-f bg-pink">
+  &lth2 class="h2">AT&lt/h2>
+&lt/div>
+&ltdiv class="avatar__text-m rounded-s bg-alpha">
+  &lth2 class="h2">AT&lt/h2>
+&lt/div>
+&ltdiv class="avatar__text-m rounded-l bg-red">
+  &lti
+    class="feature-box__icon icon-basic-world h1 flex justify-center items-center"
+  >&lt/i>
+&lt/div>
+&ltdiv class="avatar__text-m rounded-f bg-orange">
+  &lti
+    class="feature-box__icon icon-basic-compass h1 flex justify-center items-center"
+  >&lt/i>
+&lt/div>
+              </code></pre>
             </div>
           </div>
+          <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : ALERTS #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="alert" class="component--title h2"># Alerts</h2>
+            <h2 id="alert" class="main__component--heading h2 ml-2 w-full"># Alerts</h2>
 
             <!-- ##### COMPONENT BLOCK : ALERTS BASIC #### -->
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h2 class="alert__demo-title h3"># Alert Basic</h2>
-              <div class="alert__demo-alerts">
-                <div class="alert__basic-error h4 border--rad-s">
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="alert__component-title h3"># Alert Basic</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col">
+                <div class="alert__basic-error h4 rounded-s">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-warning h4 border--rad-s">
+                <div class="alert__basic-warning h4 rounded-s">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-info h4 border--rad-s">
+                <div class="alert__basic-info h4 rounded-s">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-success h4 border--rad-s">
+                <div class="alert__basic-success h4 rounded-s">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-
-                <div class="alert__code scroll-hide">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=566&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520ALERTS%2520BASIC%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522alert__basic-error%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%2520%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__basic-warning%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__basic-info%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__basic-success%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
-                    style="
-                      width: 566px;
-                      height: 858px;
-                      border: 0;
-                      transform: scale(1);
-                      overflow: hidden;
-                    "
-                    sandbox="allow-scripts allow-same-origin"
-                  >
-                  </iframe>
-                </div>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : ALERTS BASIC
+#### -->
+
+&ltdiv class="alert__basic-error h4 rounded-s">
+  &lti class="fas fa-exclamation alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an error alert — check it out !
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+
+&ltdiv class="alert__basic-warning h4 rounded-s">
+  &lti class="fas fa-exclamation-triangle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a warning alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+
+&ltdiv class="alert__basic-info h4 rounded-s">
+  &lti class="fas fa-info-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an info alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+
+&ltdiv class="alert__basic-success h4 rounded-s">
+  &lti class="fas fa-check-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a success alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+              </code></pre>
             </div>
 
             <!-- ##### COMPONENT BLOCK : ALERTS OUTLINE #### -->
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h2 class="alert__demo-title h3"># Alert Outline</h2>
-              <div class="alert__demo-alerts">
-                <div class="alert__outline-error h4 border--rad-s">
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="alert__component-title h3"># Alert Outline</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col">
+                <div class="alert__outline-error h4 rounded-s">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-warning h4 border--rad-s">
+                <div class="alert__outline-warning h4 rounded-s">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-info h4 border--rad-s">
+                <div class="alert__outline-info h4 rounded-s">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-success h4 border--rad-s">
+                <div class="alert__outline-success h4 rounded-s">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
@@ -642,216 +780,262 @@
                   <span class="alert__close">&#10006;</span>
                 </div>
 
-                <div class="alert__code scroll-hide">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=613&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520ALERTS%2520OUTLINE%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522alert__outline-error%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%2520%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__outline-warning%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__outline-info%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__outline-success%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253EThis%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
-                    style="
-                      width: 600px;
-                      height: 839px;
-                      border: 0;
-                      transform: scale(1);
-                      overflow: hidden;
-                    "
-                    sandbox="allow-scripts allow-same-origin"
-                  >
-                  </iframe>
-                </div>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : ALERTS OUTLINE
+#### -->
+&ltdiv class="alert__outline-error h4 rounded-s">
+  &lti class="fas fa-exclamation alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an error alert — check it out !
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__outline-warning h4 rounded-s">
+  &lti class="fas fa-exclamation-triangle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a warning alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__outline-info h4 rounded-s">
+  &lti class="fas fa-info-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an info alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__outline-success h4 rounded-s">
+  &lti class="fas fa-check-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a success alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+              </code></pre>
             </div>
 
             <!-- ##### COMPONENT BLOCK : ALERTS FILL #### -->
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h2 class="alert__demo-title h3"># Alert Fill</h2>
-              <div class="alert__demo-alerts">
-                <div class="alert__fill-error h4 border--rad-s">
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="alert__component-title h3"># Alert Fill</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col">
+                <div class="alert__fill-error h4 rounded-s">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-warning h4 border--rad-s">
+                <div class="alert__fill-warning h4 rounded-s">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-info h4 border--rad-s">
+                <div class="alert__fill-info h4 rounded-s">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-success h4 border--rad-s">
+                <div class="alert__fill-success h4 rounded-s">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__code scroll-hide">
-                  <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=613&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520ALERTS%2520FILL%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522alert__fill-error%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520error%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%2520%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__fill-warning%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__fill-info%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520an%2520info%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert__fill-success%2520h4%2520border--rad-s%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert__icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cp%2520class%253D%2522alert__text%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%2520%25E2%2580%2594%2520check%2520it%2520out%21%250A%2520%2520%253C%252Fp%253E%250A%2520%2520%253Cspan%2520class%253D%2522alert__close%2522%253E%2526%252310006%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A"
-                    style="
-                      width: 600px;
-                      height: 858px;
-                      border: 0;
-                      transform: scale(1);
-                      overflow: hidden;
-                    "
-                    sandbox="allow-scripts allow-same-origin"
-                  >
-                  </iframe>
-                </div>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : ALERTS FILL
+#### -->
+&ltdiv class="alert__fill-error h4 rounded-s">
+  &lti class="fas fa-exclamation alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an error alert — check it out !
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__fill-warning h4 rounded-s">
+  &lti class="fas fa-exclamation-triangle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a warning alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__fill-info h4 rounded-s">
+  &lti class="fas fa-info-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is an info alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+&ltdiv class="alert__fill-success h4 rounded-s">
+  &lti class="fas fa-check-circle alert__icon">&lt/i>
+  &ltp class="alert__text">
+    This is a success alert — check it out!
+  &lt/p>
+  &ltspan class="alert__close">&#10006;&lt/span>
+&lt/div>
+              </code></pre>
             </div>
           </div>
-
-          <!-- ############################################### -->
+          <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : BADGES #### -->
-
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="badge" class="component--title h2"># Badges</h2>
-            <table class="table">
-              <tr class="table-row">
-                <th class="table-heading h3">Letters</th>
-                <th class="table-heading h3">Size</th>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">s</td>
-                <td class="table-column h4">0.8rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">m</td>
-                <td class="table-column h4">1.2rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">l</td>
-                <td class="table-column h4">1.6rem</td>
-              </tr>
-              <tr class="table-row">
-                <td class="table-column h4">xl</td>
-                <td class="table-column h4">2rem</td>
-              </tr>
-            </table>
-            <div class="badge__demo flex justify-center items-center">
+            <h2 id="badge" class="main__component--heading h2 ml-2 w-full"># Badges</h2>
+            <div class="component--table w-full flex justify-center items-center">
+              <table class="table color-white">
+                <tr class="table-row">
+                  <th class="table-heading h3">Letters</th>
+                  <th class="table-heading h3">Size</th>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">s</td>
+                  <td class="table-column h4">0.8rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">m</td>
+                  <td class="table-column h4">1.2rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">l</td>
+                  <td class="table-column h4">1.6rem</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-column h4">xl</td>
+                  <td class="table-column h4">2rem</td>
+                </tr>
+              </table>
+            </div>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
               <!-- BADGE BASIC ICON -->
-              <h3 class="badge__type-name h3"># Badge Icon</h3>
-              <i
-                class="feature-box__icon icon-basic-cloud badge__basic-icon-xl h1"
-              ></i>
-              <i
-                class="feature-box__icon icon-basic-folder-multiple badge__basic-icon-l h2"
-              ></i>
-              <i
-                class="feature-box__icon icon-basic-mail badge__basic-icon-m h3"
-              ></i>
-              <i
-                class="feature-box__icon icon-basic-message badge__basic-icon-s h4"
-              ></i>
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ABADGES%2520BASICS%2520ICONS%250A%2523%2523%2523%2523%2520--%253E%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-cloud%2520badge__basic-icon-xl%2520h1%2522%253E%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-folder-multiple%2520badge__basic-icon-l%2520h2%2522%250A%253E%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-mail%2520badge__basic-icon-m%2520h3%2522%253E%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-message%2520badge__basic-icon-s%2520h4%2522%253E%253C%252Fi%253E"
-                  style="
-                    width: 510px;
-                    height: 465px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
+              <h3 class="badge__component-title h3 mt-2"># Badge Icon</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+                <i
+                  class="feature-box__icon icon-basic-cloud badge__basic-icon-xl h1"
+                ></i>
+                <i
+                  class="feature-box__icon icon-basic-folder-multiple badge__basic-icon-l h2"
+                ></i>
+                <i
+                  class="feature-box__icon icon-basic-mail badge__basic-icon-m h3"
+                ></i>
+                <i
+                  class="feature-box__icon icon-basic-message badge__basic-icon-s h4"
+                ></i>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+BADGES BASICS ICONS
+#### -->
+
+&lti
+  class="feature-box__icon icon-basic-cloud badge__basic-icon-xl h1"
+>&lt/i>
+&lti
+  class="feature-box__icon icon-basic-folder-multiple badge__basic-icon-l h2"
+>&lt/i>
+&lti
+  class="feature-box__icon icon-basic-mail badge__basic-icon-m h3"
+>&lt/i>
+&lti
+  class="feature-box__icon icon-basic-message badge__basic-icon-s h4"
+>&lt/i>
+              </code></pre>
 
               <!-- BADGE BASIC TEXT-->
-              <h3 class="badge__type-name h3"># Badge Text</h3>
-              <h1 class="h1 badge__basic-text-xl">TEXT</h1>
-              <h2 class="h2 badge__basic-text-l">TEXT</h2>
-              <h3 class="h3 badge__basic-text-m">TEXT</h3>
-              <h4 class="h4 badge__basic-text-s">TEXT</h4>
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ABADGES%2520BASICS%2520TEXT%250A%2523%2523%2523%2523%2520--%253E%250A%253Ch1%2520class%253D%2522h1%2520badge__basic-text-xl%2522%253ETEXT%253C%252Fh1%253E%250A%250A%253Ch2%2520class%253D%2522h2%2520badge__basic-text-l%2522%253ETEXT%253C%252Fh2%253E%250A%250A%253Ch3%2520class%253D%2522h3%2520badge__basic-text-m%2522%253ETEXT%253C%252Fh3%253E%250A%250A%253Ch4%2520class%253D%2522h4%2520badge__basic-text-s%2522%253ETEXT%253C%252Fh4%253E"
-                  style="
-                    width: 510px;
-                    height: 400px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
+              <h3 class="badge__type-name h3 mt-2"># Badge Text</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap mt-1 mb-1 color-white">
+                <h1 class="h1 badge__basic-text-xl">TEXT</h1>
+                <h2 class="h2 badge__basic-text-l">TEXT</h2>
+                <h3 class="h3 badge__basic-text-m">TEXT</h3>
+                <h4 class="h4 badge__basic-text-s">TEXT</h4>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+BADGES BASICS TEXT
+#### -->
+
+&lth1 class="h1 badge__basic-text-xl">TEXT&lt/h1>
+&lth2 class="h2 badge__basic-text-l">TEXT&lt/h2>
+&lth3 class="h3 badge__basic-text-m">TEXT&lt/h3>
+&lth4 class="h4 badge__basic-text-s">TEXT&lt/h4>
+              </code></pre>
 
               <!-- BADGE BASIC CONTENT -->
-              <h3 class="badge__type-name h3"># Badge Content</h3>
-              <i
-                class="feature-box__icon icon-basic-server2 badge__basic-content-xl h1"
-              ></i>
-              <i
-                class="feature-box__icon icon-basic-todolist-pen badge__basic-content-l h2"
-              ></i>
-              <i
-                class="feature-box__icon icon-basic-rss badge__basic-content-m h3"
-              ></i>
-              <h2 class="badge__basic-content-m h2">TEXT</h2>
-
-              <div class="avatar__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ABADGES%2520BASICS%2520CONTENT%250A%2523%2523%2523%2523%2520--%253E%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-server2%2520badge__basic-content-xl%2520h1%2522%253E%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-todolist-pen%2520badge__basic-content-l%2520h2%2522%250A%253E%253C%252Fi%253E%250A%250A%253Ci%2520class%253D%2522feature-box__icon%2520icon-basic-rss%2520badge__basic-content-m%2520h3%2522%253E%253C%252Fi%253E%250A%250A%253Ch2%2520class%253D%2522badge__basic-content-m%2520h2%2522%253ETEXT%253C%252Fh2%253E"
-                  style="
-                    width: 510px;
-                    height: 465px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
+              <h3 class="badge__type-name h3 mt-2"># Badge Content</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap mt-1 mb-1 color-white">
+                <i
+                  class="feature-box__icon icon-basic-server2 badge__basic-content-xl h1"
+                ></i>
+                <i
+                  class="feature-box__icon icon-basic-todolist-pen badge__basic-content-l h2"
+                ></i>
+                <i
+                  class="feature-box__icon icon-basic-rss badge__basic-content-m h3"
+                ></i>
+                <h2 class="badge__basic-content-m h2">TEXT</h2>
               </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+BADGES BASICS CONTENT
+#### -->
+
+&lti
+  class="feature-box__icon icon-basic-server2 badge__basic-content-xl h1"
+>&lt/i>
+&lti
+  class="feature-box__icon icon-basic-todolist-pen badge__basic-content-l h2"
+>&lt/i>
+&lti
+  class="feature-box__icon icon-basic-rss badge__basic-content-m h3"
+>&lt/i>
+              </code></pre>
+
             </div>
           </div>
-
           <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : BUTTONS #### -->
-
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="button" class="component--title h2"># Buttons</h2>
+            <h2 id="button" class="main__component--heading h2 ml-2 w-full"># Buttons</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
 
-            <!-- ##### COMPONENT BLOCK : BUTTONS BASIC TYPES #### -->
-
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h3 class="button__demo-title h3"># Button Types</h3>
-              <div
-                class="button__demo-buttons flex justify-center items-center flex-wrap"
+              <!-- ##### COMPONENT BLOCK : BUTTONS BASIC TYPES #### -->
+              <h3 class="button__component-title h3 mt-2"># Button Types</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__alpha-text"
+                  class="uppercase h4 btn--medium rounded-s btn__alpha-text"
                 >
                   text
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s bg-alpha btn__alpha-contained"
+                  class="uppercase h4 btn--medium rounded-s bg-alpha btn__alpha-contained"
                 >
                   contained
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__alpha-outlined border--solid border--m border-alpha"
+                  class="uppercase h4 btn--medium rounded-s btn__alpha-outlined border--solid border--m border-alpha"
                 >
                   outlined
                 </a>
@@ -859,193 +1043,275 @@
                   link
                 </a>
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=613&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520TEXT%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%250Ahref%253D%2522%2523%2522%250Aclass%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-text%2522%250A%253E%250Atext%250A%253C%252Fa%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520CONTAINED%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%250Ahref%253D%2522%2523%2522%250Aclass%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic__alpha-outlined%2520border--solid%2520border--m%2520border-alpha%2522%250A%253E%250Acontained%250A%253C%252Fa%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520OUTLINE%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%250Ahref%253D%2522%2523%2522%250Aclass%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-outlined%2522%250A%253E%250Aoutlined%250A%253C%252Fa%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520LINK%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522captilize%2520h4%2520btn--medium%2520btn__basic__alpha-link%2522%253E%250A%2520%2520link%2520%250A%253C%252Fa%253E%250A%250A"
-                  style="
-                    width: 600px;
-                    height: 1061px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON TEXT
+#### -->
 
-            <!-- ##### COMPONENT BLOCK : BUTTON BASIC SIZE  #### -->
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__alpha-text"
+>
+  text
+&lt/a>
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h3 class="button__demo-title h3"># Button Sizes</h3>
-              <div
-                class="button__demo-buttons flex justify-center items-center flex-wrap scroll-hide"
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON CONTAINED
+#### -->
+
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s bg-alpha btn__alpha-contained"
+>
+  contained
+&lt/a>
+
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON OUTLINE 
+#### -->
+
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__alpha-outlined border--solid border--m border-alpha"
+>
+  outlined
+&lt/a>
+
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON LINK 
+#### -->
+
+&lta href="#" class="captilize h4 btn--medium btn__alpha-link">
+  link
+&lt/a>
+              </code></pre>
+
+              <!-- ##### COMPONENT BLOCK : BUTTON BASIC SIZE  #### -->
+              <h3 class="button__component-title h3 mt-2"># Button Sizes</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
                 <a
                   href="#"
-                  class="uppercase h4 btn--small border--rad-s bg-alpha"
+                  class="uppercase h4 btn--small rounded-s bg-alpha"
                 >
                   small
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s bg-alpha"
+                  class="uppercase h4 btn--medium rounded-s bg-alpha"
                 >
                   medium
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--large border--rad-s bg-alpha"
+                  class="uppercase h4 btn--large rounded-s bg-alpha"
                 >
                   large
                 </a>
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=510&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520SIZES%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--small%2520border--rad-s%2520bg-alpha%2522%253E%2520small%2520%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520bg-alpha%2522%253E%2520medium%2520%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--large%2520border--rad-s%2520bg-alpha%2522%253E%2520large%2520%253C%252Fa%253E%250A"
-                  style="
-                    width: 510px;
-                    height: 411px;
-                    border: 0;
-                    transform: scale(1);
-                    overflow: hidden;
-                  "
-                  sandbox="allow-scripts allow-same-origin"
-                >
-                </iframe>
-              </div>
-            </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON SIZES
+#### -->
 
-            <!-- ##### COMPONENT BLOCK : BUTTONS STYLES #### -->
+&lta
+  href="#"
+  class="uppercase h4 btn--small rounded-s bg-alpha"
+>
+  small
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s bg-alpha"
+>
+  medium
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--large rounded-s bg-alpha"
+>
+  large
+&lt/a>
+              </code></pre>
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h3 class="button__demo-title h3"># Button Styles</h3>
+              <!-- ##### COMPONENT BLOCK : BUTTONS STYLES #### -->
+              <h3 class="button__component-title h3 mt-2"># Button Styles</h3>
               <div
-                class="button__demo-buttons flex justify-center items-center flex-wrap scroll-hide"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-primary"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-primary"
                 >
                   Primary
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-secondary"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-secondary"
                 >
                   Secondary
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-success"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-success"
                 >
                   Success
                 </a>
 
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-danger"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-danger"
                 >
                   Danger
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-warning"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-warning"
                 >
                   Warning
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-info"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-info"
                 >
                   Info
                 </a>
                 <a
                   href="#"
-                  class="uppercase h4 btn--medium border--rad-s btn__basic-light"
+                  class="uppercase h4 btn--medium rounded-s btn__basic-light"
                 >
                   Light
                 </a>
               </div>
-            </div>
-            <div class="button__code scroll-hide">
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=613&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520BASIC%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-primary%2522%253E%250A%2520%2520Primary%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-secondary%2522%253E%250A%2520%2520Secondary%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-success%2522%253E%250A%2520%2520Success%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-danger%2522%253E%250A%2520%2520Danger%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-warning%2522%253E%250A%2520%2520Warning%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-info%2522%253E%250A%2520%2520Info%250A%253C%252Fa%253E%250A%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522uppercase%2520h4%2520btn--medium%2520border--rad-s%2520btn__basic-light%2522%253E%250A%2520%2520Light%250A%253C%252Fa%253E%250A%250A"
-                style="
-                  width: 600px;
-                  height: 930px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
-            </div>
-            <!-- ##### COMPONENT BLOCK : BUTTONS ICONS #### -->
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON BASIC
+#### -->
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h3 class="button__demo-title h3"># Button Icons</h3>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-primary"
+>
+  Primary
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-secondary"
+>
+  Secondary
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-success"
+>
+  Success
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-danger"
+>
+  Danger
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-warning"
+>
+  Warning
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-info"
+>
+  Info
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h4 btn--medium rounded-s btn__basic-light"
+>
+  Light
+&lt/a>
+              </code></pre>
+
+              <!-- ##### COMPONENT BLOCK : BUTTONS ICONS #### -->
+              <h3 class="button__component-title h3 mt-2"># Button Icons</h3>
               <div
-                class="button__demo-buttons flex justify-center items-center flex-wrap scroll-hide"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
                 <a
                   href="#"
-                  class="uppercase h4 icon btn__icon-s border--rad-f bg-alpha"
+                  class="uppercase h4 icon btn__icon-s rounded-f bg-alpha"
                   data-icon="W"
                 >
                 </a>
                 <a
                   href="#"
-                  class="uppercase h3 icon btn__icon-m border--rad-f bg-alpha"
+                  class="uppercase h3 icon btn__icon-m rounded-f bg-alpha"
                   data-icon="W"
                 >
                 </a>
                 <a
                   href="#"
-                  class="uppercase h2 icon btn__icon-l border--rad-f bg-alpha"
+                  class="uppercase h2 icon btn__icon-l rounded-f bg-alpha"
                   data-icon="W"
                 >
                 </a>
                 <a
                   href="#"
-                  class="uppercase h1 icon btn__icon-xl border--rad-f bg-alpha"
+                  class="uppercase h1 icon btn__icon-xl rounded-f bg-alpha"
                   data-icon="W"
                 >
                 </a>
               </div>
-            </div>
-            <div class="button__code scroll-hide">
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=613&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520ICON%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Ca%250A%2520%2520href%253D%2522%2523%2522%250A%2520%2520class%253D%2522uppercase%2520h4%2520icon%2520btn__icon-s%2520border--rad-f%2520bg-alpha%2522%250A%2520%2520data-icon%253D%2522W%2522%250A%253E%250A%253C%252Fa%253E%250A%250A%253Ca%250A%2520%2520href%253D%2522%2523%2522%250A%2520%2520class%253D%2522uppercase%2520h3%2520icon%2520btn__icon-m%2520border--rad-f%2520bg-alpha%2522%250A%2520%2520data-icon%253D%2522W%2522%250A%253E%250A%253C%252Fa%253E%250A%250A%253Ca%250A%2520%2520href%253D%2522%2523%2522%250A%2520%2520class%253D%2522uppercase%2520h2%2520icon%2520btn__icon-l%2520border--rad-f%2520bg-alpha%2522%250A%2520%2520data-icon%253D%2522W%2522%250A%253E%250A%253C%252Fa%253E%250A%250A%253Ca%250A%2520%2520href%253D%2522%2523%2522%250A%2520%2520class%253D%2522uppercase%2520h1%2520icon%2520btn__icon-xl%2520border--rad-f%2520bg-alpha%2522%250A%2520%2520data-icon%253D%2522W%2522%250A%253E%250A%253C%252Fa%253E%250A"
-                style="
-                  width: 600px;
-                  height: 856px;
-                  border: 0;
-                  transform: scale(1);
-                  overflow: hidden;
-                "
-                sandbox="allow-scripts allow-same-origin"
-              >
-              </iframe>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON ICONS
+#### -->
+
+&lta
+  href="#"
+  class="uppercase h4 icon btn__icon-s rounded-f bg-alpha"
+  data-icon="W"
+>
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h3 icon btn__icon-m rounded-f bg-alpha"
+  data-icon="W"
+>
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h2 icon btn__icon-l rounded-f bg-alpha"
+  data-icon="W"
+>
+&lt/a>
+&lta
+  href="#"
+  class="uppercase h1 icon btn__icon-xl rounded-f bg-alpha"
+  data-icon="W"
+>
+&lt/a>
+              </code></pre>
+
             </div>
           </div>
-
           <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : CARDS #### -->
-
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="card" class="component--title h2"># Cards</h2>
+            <h2 id="card" class="main__component--heading h2 ml-2 w-full"># Cards</h2>
 
             <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
 
-            <div class="alert__demo-block m-1 scroll-hide">
-              <h3 class="card__demo-title h3"># Card Types</h3>
-              <select name="cards" id="card__option" class="border--rad-m h4 m-1">
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="card__component-title h3 mt-2"># Card Types</h3>
+              <select name="cards" id="card__option" class="rounded-m h4 m-1">
                 <option value="card__basic">card__basic</option>
                 <option value="card__basic__header">card__basic__header</option>
                 <option value="card__basic__text-over-media">
@@ -1062,11 +1328,8 @@
                 </option>
               </select>
               <div
-                class="alert__demo-block m-1 scroll-hide"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
-              <!-- <div
-                class="card__demo flex justify-center items-center  m-1 mb-2 scroll-hide"
-              > -->
                 <div class="card card__basic">
                   <div class="card__content-box">
                     <img src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="Card Image" class="card__content-box--image"></img>
@@ -1088,8 +1351,8 @@
                   </div>
                   <div class="card__links">
                     <div class="card__buttons p-1">
-                      <a href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 border--rad-s"> READ </a>
-                      <a href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 border--rad-s"> BOOKMARK </a>
+                      <a href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 rounded-s"> READ </a>
+                      <a href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 rounded-s"> BOOKMARK </a>
                     </div>
 
                     <div class="card__icons">
@@ -1106,78 +1369,132 @@
                   </div>
                 </div>
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520BUTTON%2520SIZES%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253C%21--%2520%2523%2523%2523%2523%2523%2520%250AChange%2520the%2520class%2520name%2520of%2520this%2520main%2520container%250A%2520to%2520change%2520the%2520layout%2520%250A%250A%253Cdiv%2520class%253D%2522card%2520card__basic%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card__basic__header%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card__basic__text-over-media%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card__basic__only-buttons%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card__basic__only-icons%2522%253E%250A%253Cdiv%2520class%253D%2522card%2520card__horizontal-image-and-text%2522%253E%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522card%2520card__basic%2522%253E%250A%2520%2520%250A%2520%2520%250A%2520%2520%253Cdiv%2520class%253D%2522card__content-box%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fmaterial-components.github.io%252Fmaterial-components-web-catalog%252Fstatic%252Fmedia%252Fphotos%252F3x2%252F2.jpg%2522%2520alt%253D%2522Card%2520Image%2522%2520class%253D%2522card__content-box--image%2522%253E%253C%252Fimg%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__heading%2520p-1%2520m-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch1%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card__heading--main%2520h3%2520color-black%2520bold%2522%250A%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Our%2520Changing%2520planet%250A%2520%2520%2520%2520%2520%2520%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card__heading--sub%2520h4%2520semibold%2520color-light-grey-2%2522%250A%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520by%2520kurt%2520Wagner%250A%2520%2520%2520%2520%2520%2520%253C%252Fh2%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card__text%2520text-3%2520m-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520At%2520deserunt%2520pariatur%2520dolorum%2520sit%2520quod%2520possimus%2520molestias%2520accusamus%2520corporis%2520accusantium.%250A%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card__links%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__button%2520btn__alpha-text%2520color-purple%2520h4%2520semibold%2520p-1%2520border--rad-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520READ%2520%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__button%2520btn__alpha-text%2520color-purple%2520h4%2520semibold%2520p-1%2520border--rad-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520BOOKMARK%2520%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card__icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__icons--heart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__icons--share%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522card__icons--options%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-ellipsis-v%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E"
-                style="width: 578px; height: 1490px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-              </iframe>
-              </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : BUTTON SIZES
+#### -->
+
+&lt!-- ##### 
+Change the class name of this main container
+ to change the layout 
+
+&ltdiv class="card card__basic">
+&ltdiv class="card card__basic__header">
+&ltdiv class="card card__basic__text-over-media">
+&ltdiv class="card card__basic__only-buttons">
+&ltdiv class="card card__basic__only-icons">
+&ltdiv class="card card__horizontal-image-and-text">
+#### -->
+
+&ltdiv class="card card__basic">
+  &ltdiv class="card__content-box">
+    &ltimg src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="Card Image" class="card__content-box--image">&lt/img>
+    &ltdiv class="card__heading p-1 m-1">
+      &lth1
+        class="card__heading--main h3 color-black bold"
+      >
+        Our Changing planet
+      &lt/h1>
+      &lth2
+        class="card__heading--sub h4 semibold color-light-grey-2"
+      >
+        by kurt Wagner
+      &lt/h2>
+    &lt/div>
+    &ltp class="card__text text-3 m-1 p-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At deserunt pariatur dolorum sit quod possimus molestias accusamus corporis accusantium.
+    &lt/p>
+  &lt/div>
+  &ltdiv class="card__links">
+    &ltdiv class="card__buttons p-1">
+      &lta href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 rounded-s"> READ &lt/a>
+      &lta href="#" class="card__button btn__alpha-text color-purple h4 semibold p-1 rounded-s"> BOOKMARK &lt/a>
+    &lt/div>
+
+    &ltdiv class="card__icons">
+      &lta href="#" class="card__icons--heart">
+        &lti class="far fa-heart">&lt/i>
+      &lt/a>
+      &lta href="#" class="card__icons--share">
+        &lti class="fas fa-share-alt">&lt/i>
+      &lt/a>
+      &lta href="#" class="card__icons--options">
+        &lti class="fas fa-ellipsis-v">&lt/i>
+      &lt/a>
+    &lt/div>
+  &lt/div>
+&lt/div>
+              </code></pre>
             </div>
           </div>
-
           <!-- ######################### -->
+
           <!-- ##### COMPONENT BLOCK : IMAGE #### -->
-
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="image" class="component--title h2"># Images</h2>
+            <h2 id="image" class="main__component--heading h2 ml-2 w-full"># Images</h2>
 
-            <!-- ##### COMPONENT BLOCK : IMAGE TYPES #### -->
+            
 
-            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center">
-              <h3 class="image__demo-title h3"># Responsive Images</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <!-- ##### COMPONENT BLOCK : RESPONSIVE IMAGES #### -->
+              <h3 class="image__component-title h3 mt-2"># Responsive Images</h3>
               <div
-                class="img__demo-block m-1 scroll-hide h-max w-full"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
 
               <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover ">
                 
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520IMAGE%2520RESPONSIVE%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%252F500x500%2522%2520alt%253D%2522random%2520demo%2520image%2522%2520class%253D%2522w-full%2520object-cover%2520%2522%253E"
-                  style="width: 578px; height: 318px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
-            </div>
-            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center">
-              <h3 class="image__demo-title h3"># Rounded Images</h3>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : IMAGE RESPONSIVE 
+#### -->
+
+&ltimg src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover ">
+              </code></pre>
+
+              <!-- ##### COMPONENT BLOCK : ROUNDED IMAGES #### -->
+              <h3 class="image__component-title h3 mt-2"># Rounded Images</h3>
               <div
-                class="img__demo-block m-1 scroll-hide h-max w-full"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
               >
-              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover border--rad-l mb-2">
-              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover border--rad-f">
-                
+
+              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-l mb-2">
+              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-f">
+                  
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520IMAGE%2520ROUNDED%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%252F500x500%2522%2520alt%253D%2522random%2520demo%2520image%2522%2520class%253D%2522w-full%2520object-cover%2520border--rad-l%2520mb-2%2522%253E%250A%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fsource.unsplash.com%252Frandom%252F500x500%2522%2520alt%253D%2522random%2520demo%2520image%2522%2520class%253D%2522w-full%2520object-cover%2520border--rad-f%2522%253E"
-                  style="width: 578px; height: 411px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : IMAGE ROUNDED 
+#### -->
+
+&ltimg src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-l mb-2">
+&ltimg src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-f">
+              </code></pre>
             </div>
           </div>
-
           <!-- ######################### -->
-          <!-- ##### COMPONENT BLOCK : IMAGE #### -->
 
+          <!-- ##### COMPONENT BLOCK : INPUT #### -->
           <div
-            class="component--block component--typography flex justify-center items-center"
+            class="main__component--block w-full m-auto"
           >
-            <h2 id="inputs" class="component--title h2"># Inputs</h2>
+            <h2 id="inputs" class="main__component--heading h2 ml-2 w-full"># Inputs</h2>
 
-            <!-- ##### COMPONENT BLOCK : IMAGE TYPES #### -->
+            <!-- ##### COMPONENT BLOCK : INPUT TYPES #### -->
 
-            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center">
-              <h3 class="input__demo-title h3 mt-1"># Text Inputs</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+
+              <!-- ##### COMPONENT BLOCK : TEXT INPUTS #### -->
+              <h3 class="heading__component-title h3 mt-2"># Text Inputs</h3>
               <div
-                class="img__demo-block m-1 scroll-hide h-max w-full flex justify-center items-center flex-wrap flex-col p-1"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap flex-col mt-2 mb-2 color-white pt-1"
               >
-
                 <div class="input__text-group">
                   <input
                   type="text"
@@ -1214,19 +1531,52 @@
                   <div class="h5 input__error color-red"><i>Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.</i></div>
                 </div>
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520TEXT%2520INPUTS%2520%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520type%253D%2522text%2522%250A%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520placeholder%253D%2522Full%2520Name%2522%250A%2520%2520id%253D%2522name%2522%250A%2520%2520required%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522name%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Full%2520name%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520%2520%2520placeholder%253D%2522Email%2520address%2522%250A%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520required%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Email%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522h5%2520input__error%2520color-red%2522%253E%250A%2520%2520%2520%2520%253Ci%253EMust%2520be%2520a%2520valid%2520email%2520address.%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__text-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520class%253D%2522input__text-input%2522%250A%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520id%253D%2522email%2522%250A%2520%2520%2520%2520required%250A%2520%2520%2520%2520pattern%253D%2522%28%253F%253D.*%255Cd%29%28%253F%253D.*%255Ba-z%255D%29%28%253F%253D.*%255BA-Z%255D%29.%257B6%252C%257D%2522%2520%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522email%2522%2520class%253D%2522input__text-label%2522%253E%250A%2520%2520%2520%2520Password%250A%2520%2520%253C%252Flabel%253E%250A%2520%2520%253Cdiv%2520class%253D%2522h5%2520input__error%2520color-red%2522%253E%250A%2520%2520%2520%2520%253Ci%253EYour%2520password%2520must%2520be%2520at%2520least%25206%2520characters%2520as%2520well%2520as%2520contain%2520at%2520least%2520one%2520uppercase%252C%2520one%2520lowercase%252C%2520and%2520one%2520number.%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                  style="width: 578px; height: 1118px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
-            </div>
-            
-            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center ">
-              <h3 class="input__demo-title h3 mt-1"># Radio Inputs</h3>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : TEXT INPUTS  
+#### -->
+&ltdiv class="input__text-group">
+  &ltinput
+  type="text"
+  class="input__text-input"
+  placeholder="Full Name"
+  id="name"
+  required
+  />
+  &ltlabel for="name" class="input__text-label">Full name&lt/label>
+&lt/div>
+
+&ltdiv class="input__text-group">
+  &ltinput
+    type="email"
+    class="input__text-input"
+    placeholder="Email address"
+    id="email"
+    required
+  />
+  &ltlabel for="email" class="input__text-label">Email&lt/label>
+  &ltdiv class="h5 input__error color-red">&lti>Must be a valid email address.&lt/i>&lt/div>
+&lt/div>
+
+&ltdiv class="input__text-group">
+  &ltinput
+    type="password"
+    class="input__text-input"
+    placeholder="Password"
+    id="email"
+    required
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+  />
+  &ltlabel for="email" class="input__text-label">Password&lt/label>
+  &ltdiv class="h5 input__error color-red">&lti>Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.&lt/i>&lt/div>
+&lt/div>
+              </code></pre>
+
+              <!-- ##### COMPONENT BLOCK : RADIO INPUTS #### -->
+              <h3 class="input__demo-title h3 mt-2"># Radio Inputs</h3>
               <div
-                class="img__demo-block m-1 scroll-hide h-max w-full flex justify-center items-center flex-wrap flex-col p-1"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 color-white"
               >
                   <div class="input__radio-group mt-1">
                     <input
@@ -1254,13 +1604,43 @@
                     </label>
                   </div>      
               </div>
-              <div class="button__code scroll-hide">
-                <iframe
-                  src="https://carbon.now.sh/embed?bg=rgba%2868%2C71%2C88%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=577.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2523%2523%2523%2523%2523%2520%250ACOMPONENT%2520BLOCK%2520%253A%2520RADIO%2520INPUTS%2520%2520%250A%2523%2523%2523%2523%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522input__radio-group%2520mt-1%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520class%253D%2522input__radio-input%2522%250A%2520%2520%2520%2520id%253D%2522small%2522%250A%2520%2520%2520%2520name%253D%2522size%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522small%2522%2520class%253D%2522input__radio-label%2520h4%2520color-purple%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input__radio-button%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520Radio%2520Input%25201%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input__radio-group%2522%253E%250A%2520%2520%253Cinput%250A%2520%2520%2520%2520type%253D%2522radio%2522%250A%2520%2520%2520%2520class%253D%2522input__radio-input%2522%250A%2520%2520%2520%2520id%253D%2522large%2522%250A%2520%2520%2520%2520name%253D%2522size%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522large%2522%2520class%253D%2522input__radio-label%2520h4%2520color-purple%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522input__radio-button%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520Radio%2520Input%25202%250A%2520%2520%253C%252Flabel%253E%250A%253C%252Fdiv%253E%2520"
-                  style="width: 578px; height: 746px; border:0; transform: scale(1); overflow:hidden;"
-                  sandbox="allow-scripts allow-same-origin">
-                </iframe>
-              </div>
+
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : RADIO INPUTS  
+#### -->
+
+&ltdiv class="input__radio-group mt-1">
+  &ltinput
+    type="radio"
+    class="input__radio-input"
+    id="small"
+    name="size"
+  />
+  &ltlabel for="small" class="input__radio-label h4 color-purple">
+    &ltspan class="input__radio-button">&lt/span>
+    Radio Input 1
+  &lt/label>
+&lt/div>
+
+&ltdiv class="input__radio-group">
+  &ltinput
+    type="radio"
+    class="input__radio-input"
+    id="large"
+    name="size"
+  />
+  &ltlabel for="large" class="input__radio-label h4 color-purple">
+    &ltspan class="input__radio-button">&lt/span>
+    Radio Input 2
+  &lt/label>
+&lt/div>   
+              </code></pre>
+            </div>
+            
+            <div class="alert__demo-block m-1 scroll-hide flex justify-center flex-col items-center ">
+
+              <!-- #### CODE #### -->
             </div>
 
           </div>
@@ -1277,8 +1657,22 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- ######## HIGHLIGHT JS ######## -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+    integrity="sha512-IaaKO80nPNs5j+VLxd42eK/7sYuXQmr+fyywCNA0e+C6gtQnuCXNtORe9xR4LqGPz5U9VpH+ff41wKs/ZmC3iA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    
+    <script>
+      hljs.highlightAll();
+    </script>
+    <!-- ################ -->
+
     <script src="../js/app.js"></script>
   </body>
 </html>
+
 
 
