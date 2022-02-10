@@ -64,7 +64,7 @@
 .alpha-docs--primary {
   padding: 1rem;
   text-align: center;
-  border-bottom: 2px solid var(--color-cyan);
+  border-bottom: 1px dotted rgba(var(--color-rgb-purple), 0.6);
 }
 
 .alpha-docs--secondary {
@@ -79,7 +79,7 @@
 }
 
 .alpha-docs--secondary:not(:last-child) {
-  border-bottom: 2px solid var(--color-cyan);
+  border-bottom: 1px dotted rgba(var(--color-rgb-purple), 0.6);
 }
 
 .alpha-docs__intro::after {
@@ -244,6 +244,30 @@ pre {
   border: none;
   padding: 1rem;
   font-family: var(--font-primary);
+}
+
+/* ############### ASIDE LINK HOVER ############### */
+
+.active__effect {
+  font-weight: 500;
+  padding: 0rem 1rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.active__effect:focus,
+.active__effect:active,
+.active__effect:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(var(--color-rgb-cyan), 1),
+    rgba(var(--color-rgb-purple), 1)
+  );
+  padding: 0rem 1rem;
+  color: var(--color-background);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; */
 }
 
 /* ############### MEDIA QUERY ############### */
