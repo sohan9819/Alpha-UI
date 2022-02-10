@@ -32,16 +32,18 @@
   <body>
     <div class="alpha">
       <!-- ##### NAV BAR #### -->
-      <nav class="alpha__nav p-1 flex justify-between items-center">
+      <nav class="alpha__nav p-1 flex justify-between items-center gap-1">
         <h2 class="alpha__nav--logo h3">
           <a href="../index.html" class="alpha__nav--logo-main">ALPHA</a>
           &nbsp;UI
         </h2>
 
-        <a href="https://github.com/sohan9819/Alpha-UI/tree/main" 
-         target="_blank" class="alpha__nav--link h4">
-          <i class="fab fa-github"></i> &nbsp; github
-        </a>
+        <div  class="h4 flex justify-end items-center gap-2 pr-2 color-white">
+          <a href="https://github.com/sohan9819/Alpha-UI/tree/main" 
+          target="_blank">
+            <i class="fab fa-github">&nbsp; github</i> 
+          </a>
+        </div>
       </nav>
 
       <!-- ##### PAGE CONTENT #### -->
@@ -76,6 +78,7 @@
             <a href="#image" class="h--primary h4"># Image</a>
             <a href="#inputs" class="h--primary h4"># Input</a>
             <a href="#list" class="h--primary h4"># Lists</a>
+            <a href="#nav" class="h--primary h4"># Navigation</a>
           </div>
         </aside>
         <article class="alpha-docs__main__article w-full overflow-x-hide">
@@ -1771,6 +1774,59 @@ COMPONENT BLOCK : STACKED LISTS
   &ltli class="list__item w-full  h4 color-purple">&rArr; Item 3&lt/li>
   &ltli class="list__item w-full  h4 color-purple">&rArr; Item 4&lt/li>
 &lt/ul>
+              </code></pre>
+            </div>
+          </div>
+          <!-- ######################### -->
+
+          <!-- ##### COMPONENT BLOCK : NAVIGATION #### -->
+          <div class="main__component--block w-full m-auto">
+            <h2 id="nav" class="main__component--heading h2 ml-2 w-full"># Navigation</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="nav__component-title h3 mt-2"># Desktop Simple</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+                <nav class="alpha__nav p-1 flex justify-between items-center flex-wrap gap-1">
+                  <h2 class="alpha__nav--logo h3">
+                    <a href="#" class="alpha__nav--logo-main">ALPHA</a>
+                    &nbsp;UI
+                  </h2>
+          
+                  <div class="h4 flex justify-end items-center gap-2 pr-1 color-white">
+                    <a href="#">
+                      <i class="fas fa-envelope ">&nbsp;mail</i>
+                    </a>
+                      <a href="#">
+                      <i class="fab fa-twitter ">&nbsp;twitter</i>
+                    </a>
+                      <a href="#">
+                      <i class="fab fa-github ">&nbsp;github</i> 
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+&lt!-- ##### 
+COMPONENT BLOCK : DESKTOP NAVIGATION 
+#### -->
+
+&ltnav class="alpha__nav p-1 flex justify-between items-center flex-wrap gap-1">
+  &lth2 class="alpha__nav--logo h3">
+    &lta href="#" class="alpha__nav--logo-main">ALPHA&lt/a>
+    &nbsp;UI
+  &lt/h2>
+
+  &ltdiv class="h4 flex justify-end items-center gap-2 pr-1 color-white">
+    &lta href="#">
+      &lti class="fas fa-envelope ">&nbsp;mail&lt/i>
+    &lt/a>
+      &lta href="#">
+      &lti class="fab fa-twitter ">&nbsp;twitter&lt/i>
+    &lt/a>
+      &lta href="#">
+      &lti class="fab fa-github ">&nbsp;github&lt/i> 
+    &lt/a>
+  &lt/div>
+&lt/nav>
               </code></pre>
             </div>
           </div>
