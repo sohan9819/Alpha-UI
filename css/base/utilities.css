@@ -305,27 +305,19 @@
   border-style: dotted;
 }
 
-/* FLEX */
+/* POSITIONS */
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.fixed {
+  position: fixed;
 }
-
-.flex-even {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
+.relative {
+  position: relative;
 }
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+.sticky {
+  position: sticky;
+}
+.absolute {
+  position: absolute;
 }
 
 /* #### display : flex #### */
