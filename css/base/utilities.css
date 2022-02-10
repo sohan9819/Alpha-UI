@@ -262,6 +262,36 @@
 .pr-8 {
   padding-right: 8rem;
 }
+.px-1 {
+  padding: 0rem 1rem;
+}
+.px-2 {
+  padding: 0rem 2rem;
+}
+.px-4 {
+  padding: 0rem 4rem;
+}
+.px-6 {
+  padding: 0rem 6rem;
+}
+.px-8 {
+  padding: 0rem 8rem;
+}
+.py-1 {
+  padding: 1rem 0rem;
+}
+.py-2 {
+  padding: 2rem 0rem;
+}
+.py-4 {
+  padding: 4rem 0rem;
+}
+.py-6 {
+  padding: 6rem 0rem;
+}
+.py-8 {
+  padding: 8rem 0rem;
+}
 
 /* BORDER RADIUS */
 

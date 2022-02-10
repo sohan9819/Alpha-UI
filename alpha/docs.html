@@ -87,9 +87,15 @@
             <a href="#list" class="active__effect w-full text-left rounded-s h4"># Lists</a>
             <a href="#nav" class="active__effect w-full text-left rounded-s h4"># Navigation</a>
           </div>
+          <div class="alpha-docs--primary">
+            <h3 class="h--primary h3">Layouts</h3>
+          </div>
+          <div class="alpha-docs--secondary">
+            <a href="#float_grid" class="active__effect w-full text-left rounded-s h4"># Floating Grids</a>
+          </div>
         </aside>
         <article class="alpha-docs__main__article w-full overflow-x-hide">
-          <!-- #### DOCS INTRO #### -->
+<!-- #### DOCS INTRO #### -->
           <div class="alpha-docs__intro mb-2 pb-4 m-auto w-full flex justify-center items-center flex-col h-max relative">
             <img
               src="../assets/images/logo.svg"
@@ -100,7 +106,7 @@
             <h3 class="alpha__version h3">V 1.0</h3>
           </div>
 
-        <!-- #### COMPONENT BLOCK : TYPOGRAPHY #### -->
+<!-- #### COMPONENT BLOCK : GET STARTED #### -->
 
           <!-- ##### COMPONENT BLOCK : IMPORT HTML #### -->
           <div
@@ -134,7 +140,7 @@ For importing the library from the css copy this code at the top of your css fil
           </div>
         </div>
 
-        <!-- #### COMPONENT BLOCK : TYPOGRAPHY #### -->
+<!-- #### COMPONENT BLOCK : TYPOGRAPHY #### -->
 
           <!-- ##### COMPONENT BLOCK : HEADING #### -->
           <div
@@ -322,7 +328,7 @@ For importing the library from the css copy this code at the top of your css fil
           </div>
           <!-- ######################### -->
 
-        <!-- ##### COMPONENT BLOCK : UTILITY #### -->
+<!-- ##### COMPONENT BLOCK : UTILITY #### -->
 
           <!-- ##### COMPONENT BLOCK : MARGINS #### -->
           <div
@@ -1874,6 +1880,75 @@ COMPONENT BLOCK : DESKTOP NAVIGATION
           </div>
           <!-- ######################### -->
 
+<!-- ##### COMPONENT BLOCK : LAYOUTS #### -->
+          
+          <!-- ##### COMPONENT BLOCK : FLOAT GRIDS #### -->
+          <div class="main__component--block w-full m-auto">
+            <h2 id="float_grid" class="main__component--heading h2 ml-2 w-full"># Floating Grid Layouts </h2>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 flex-col color-white h4 color-black-1 mr-1">
+                <div class="row">
+                  <div class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2</div>
+                  <div class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2</div>
+                </div>
+                <div class="row">
+                  <div class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3</div>
+                  <div class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3</div>
+                  <div class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3</div>
+                </div>
+                <div class="row">
+                  <div class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3</div>
+                  <div class="col-2-0f-3 p-1 bg-orange text-center rounded-s">Col 2 of 3</div>
+                </div>
+                <div class="row">
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                </div>
+                <div class="row">
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-2-0f-4 p-1 bg-orange text-center rounded-s">Col 2 of 4</div>
+                </div>
+                <div class="row">
+                  <div class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4</div>
+                  <div class="col-3-0f-4 p-1 bg-orange text-center rounded-s">Col 3 of 4</div>
+                </div>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2&lt/div>
+  &ltdiv class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2&lt/div>
+&lt/div>
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3&lt/div>
+  &ltdiv class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3&lt/div>
+  &ltdiv class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3&lt/div>
+&lt/div>
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-3 p-1 bg-orange text-center rounded-s">Col 1 of 3&lt/div>
+  &ltdiv class="col-2-0f-3 p-1 bg-orange text-center rounded-s">Col 2 of 3&lt/div>
+&lt/div>
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+&lt/div>
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-2-0f-4 p-1 bg-orange text-center rounded-s">Col 2 of 4&lt/div>
+&lt/div>
+&ltdiv class="row">
+  &ltdiv class="col-1-0f-4 p-1 bg-orange text-center rounded-s">Col 1 of 4&lt/div>
+  &ltdiv class="col-3-0f-4 p-1 bg-orange text-center rounded-s">Col 3 of 4&lt/div>
+&lt/div>
+              </code></pre>
+            </div>
+          </div>
+          <!-- ######################### -->
         </article>
       </main>
     </div>
