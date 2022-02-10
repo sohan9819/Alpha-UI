@@ -1,4 +1,7 @@
 /* ########## CARD OPTIONS ########## */
+hljs.highlightAll();
+
+/* ########## CARD OPTIONS ########## */
 const card__option = document.querySelector("#card__option");
 const card__layout = document.querySelector(".card");
 

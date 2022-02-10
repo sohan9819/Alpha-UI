@@ -122,6 +122,9 @@ pre {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
+  font-family: var(--font-primary) !important;
+  letter-spacing: 1px !important;
+  word-spacing: 3px !important;
   /* border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
   border-image-source: linear-gradient(
     to bottom right,
@@ -129,6 +132,7 @@ pre {
     var(--color-purple)
   );
   overflow-x: auto;
+  box-shadow: 0 1rem 2rem rgba(var(--color-rgb-black), 0.4);
 }
 
 /* ##### GRADIENT HEADING TITLES ##### */
