@@ -156,7 +156,8 @@ pre {
   color: transparent;
 }
 
-.heading__component-title {
+.heading__component-title,
+.input__component-title {
   background-image: linear-gradient(
     to bottom,
     rgba(var(--color-rgb-dark-grey-1), 1),
@@ -178,7 +179,8 @@ pre {
   color: transparent;
 }
 
-.alert__component-title {
+.alert__component-title,
+.list__component-title {
   background-image: linear-gradient(
     to bottom,
     rgba(var(--color-rgb-orange), 1),
@@ -215,6 +217,17 @@ pre {
   background-image: linear-gradient(
     to bottom,
     rgba(var(--color-rgb-light-green-1), 1),
+    rgba(var(--color-rgb-blue-1), 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.image__component-title {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(var(--color-rgb-cyan), 1),
     rgba(var(--color-rgb-blue-1), 1)
   );
   -webkit-background-clip: text;

@@ -33,6 +33,7 @@
 
   --color-black: #000000;
 
+  --color-black-1: #17141d;
   --color-grey: #808080;
 
   --color-dark-green-1: #1abc9c;
@@ -72,6 +73,7 @@
 
   --color-rgb-black: 0, 0, 0;
 
+  --color-rgb-black-1: 23, 20, 29;
   --color-rgb-grey: 128, 128, 128;
 
   --color-rgb-dark-green-1: 26, 188, 156;
