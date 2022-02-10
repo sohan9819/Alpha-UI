@@ -1,0 +1,16 @@
+.list__stack {
+  position: relative;
+  background: var(--color-black-1);
+  box-shadow: -1rem 0 3rem var(--color-black);
+  padding: 1.5rem;
+}
+
+.list__item {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.6rem;
+}
+.list__item:hover {
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.6rem;
+  background-color: rgba(var(--color-rgb-grey), 0.1);
+}

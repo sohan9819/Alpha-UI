@@ -504,3 +504,8 @@
 .overflow-hide {
   overflow: hidden !important;
 }
+
+/* #### Box-Shadow #### */
+.box-shadow {
+  box-shadow: 0 1rem 1.4rem rgba(var(--color-rgb-black), 0.2);
+}

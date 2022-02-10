@@ -69,6 +69,9 @@
 .color-black {
   color: var(--color-black);
 }
+.color-black-1 {
+  color: var(--color-black-1);
+}
 .color-grey {
   color: var(--color-grey);
 }
@@ -211,6 +214,9 @@
 .bg-black {
   background-color: var(--color-black);
 }
+.bg-black-1 {
+  background-color: var(--color-black-1);
+}
 .bg-grey {
   background-color: var(--color-grey);
 }
@@ -352,6 +358,9 @@
 
 .border-black {
   border-color: var(--color-black);
+}
+.border-black-1 {
+  border-color: var(--color-black-1);
 }
 .border-grey {
   border-color: var(--color-grey);

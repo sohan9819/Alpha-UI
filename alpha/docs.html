@@ -75,6 +75,7 @@
             <a href="#card" class="h--primary h4"># Card</a>
             <a href="#image" class="h--primary h4"># Image</a>
             <a href="#inputs" class="h--primary h4"># Input</a>
+            <a href="#list" class="h--primary h4"># Lists</a>
           </div>
         </aside>
         <article class="alpha-docs__main__article w-full overflow-x-hide">
@@ -1311,7 +1312,7 @@ COMPONENT BLOCK : BUTTON ICONS
 
             <div class="max-w-screen flex justify-center items-center flex-col mt-1">
               <h3 class="card__component-title h3 mt-2"># Card Types</h3>
-              <select name="cards" id="card__option" class="rounded-m h4 m-1">
+              <select name="cards" id="card__option" class="rounded-m h4 m-1 bg-white">
                 <option value="card__basic">card__basic</option>
                 <option value="card__basic__header">card__basic__header</option>
                 <option value="card__basic__text-over-media">
@@ -1435,9 +1436,6 @@ Change the class name of this main container
             class="main__component--block w-full m-auto"
           >
             <h2 id="image" class="main__component--heading h2 ml-2 w-full"># Images</h2>
-
-            
-
             <div class="max-w-screen flex justify-center items-center flex-col mt-1">
               <!-- ##### COMPONENT BLOCK : RESPONSIVE IMAGES #### -->
               <h3 class="image__component-title h3 mt-2"># Responsive Images</h3>
@@ -1491,7 +1489,7 @@ COMPONENT BLOCK : IMAGE ROUNDED
             <div class="max-w-screen flex justify-center items-center flex-col mt-1">
 
               <!-- ##### COMPONENT BLOCK : TEXT INPUTS #### -->
-              <h3 class="heading__component-title h3 mt-2"># Text Inputs</h3>
+              <h3 class="input__component-title h3 mt-2"># Text Inputs</h3>
               <div
                 class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap flex-col mt-2 mb-2 color-white pt-1"
               >
@@ -1574,7 +1572,7 @@ COMPONENT BLOCK : TEXT INPUTS
               </code></pre>
 
               <!-- ##### COMPONENT BLOCK : RADIO INPUTS #### -->
-              <h3 class="heading__component-title h3 mt-2"># Radio Inputs</h3>
+              <h3 class="input__component-title h3 mt-2"># Radio Inputs</h3>
               <div
                 class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 color-white"
               >
@@ -1644,8 +1642,140 @@ COMPONENT BLOCK : RADIO INPUTS
             </div>
 
           </div>
-
           <!-- ######################### -->
+
+          <!-- ##### COMPONENT BLOCK : LIST #### -->
+          <div class="main__component--block w-full m-auto">
+            <h2 id="list" class="main__component--heading h2 ml-2 w-full"># Lists</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+              <h3 class="list__component-title h3 mt-2"># Spaced Lists</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+                <ul class="w-max bg-black-1 p-1 flex justify-center items-start flex-col gap-1 rounded-m box-shadow">
+                  <h2 class="h3 color-purple">
+                    Simple Lists
+                  </h2>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 1</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 2</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 3</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 4</li>
+                </ul>
+                <ul class="w-max bg-black-1 p-1 flex justify-center items-start flex-col gap-1 rounded-m box-shadow">
+                  <h2 class="h3 color-purple">
+                    Simple Lists
+                  </h2>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 1</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 2</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 3</li>
+                  <li class="list__item w-full h4 color-pink">&rArr; Item 4</li>
+                </ul>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+&lt!-- ##### 
+COMPONENT BLOCK : SPACED LISTS  
+#### -->
+&ltul class="w-max bg-black-1 p-1 flex justify-center items-start flex-col gap-1 rounded-m box-shadow">
+  &lth2 class="h3 color-purple">
+    Simple Lists
+  &lt/h2>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 4&lt/li>
+&lt/ul>
+&ltul class="w-max bg-black-1 p-1 flex justify-center items-start flex-col gap-1 rounded-m box-shadow">
+  &lth2 class="h3 color-purple">
+    Simple Lists
+  &lt/h2>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full h4 color-pink">&rArr; Item 4&lt/li>
+&lt/ul>
+              </code></pre>
+              <h3 class="list__component-title h3 mt-2"># Stacked Lists</h3>
+              <div class="w-full max-w-screen flex justify-center items-center  flex-wrap mt-1 mb-1 color-white">
+                <ul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+                  <h2 class="h3 color-red">
+                    Stacked Lists
+                  </h2>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 1</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 2</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 3</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 4</li>
+                </ul>
+                <ul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+                  <h2 class="h3 color-alpha">
+                    Stacked Lists
+                  </h2>
+                  <li class="list__item w-full h4 color-purple">&rArr; Item 1</li>
+                  <li class="list__item w-full h4 color-purple">&rArr; Item 2</li>
+                  <li class="list__item w-full h4 color-purple">&rArr; Item 3</li>
+                  <li class="list__item w-full h4 color-purple">&rArr; Item 4</li>
+                </ul>
+                <ul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+                  <h2 class="h3 color-red">
+                    Stacked Lists
+                  </h2>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 1</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 2</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 3</li>
+                  <li class="list__item w-full h4 color-orange">&rArr; Item 4</li>
+                </ul>
+                <ul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+                  <h2 class="h3 color-alpha">
+                    Stacked Lists
+                  </h2>
+                  <li class="list__item w-full  h4 color-purple">&rArr; Item 1</li>
+                  <li class="list__item w-full  h4 color-purple">&rArr; Item 2</li>
+                  <li class="list__item w-full  h4 color-purple">&rArr; Item 3</li>
+                  <li class="list__item w-full  h4 color-purple">&rArr; Item 4</li>
+                </ul>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+&lt!-- ##### 
+COMPONENT BLOCK : STACKED LISTS  
+#### -->
+&ltul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+  &lth2 class="h3 color-red">
+    Stacked Lists
+  &lt/h2>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 4&lt/li>
+&lt/ul>
+&ltul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+  &lth2 class="h3 color-alpha">
+    Stacked Lists
+  &lt/h2>
+  &ltli class="list__item w-full h4 color-purple">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full h4 color-purple">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full h4 color-purple">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full h4 color-purple">&rArr; Item 4&lt/li>
+&lt/ul>
+&ltul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+  &lth2 class="h3 color-red">
+    Stacked Lists
+  &lt/h2>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full h4 color-orange">&rArr; Item 4&lt/li>
+&lt/ul>
+&ltul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
+  &lth2 class="h3 color-alpha">
+    Stacked Lists
+  &lt/h2>
+  &ltli class="list__item w-full  h4 color-purple">&rArr; Item 1&lt/li>
+  &ltli class="list__item w-full  h4 color-purple">&rArr; Item 2&lt/li>
+  &ltli class="list__item w-full  h4 color-purple">&rArr; Item 3&lt/li>
+  &ltli class="list__item w-full  h4 color-purple">&rArr; Item 4&lt/li>
+&lt/ul>
+              </code></pre>
+            </div>
+          </div>
+          <!-- ######################### -->
+
         </article>
       </main>
     </div>
