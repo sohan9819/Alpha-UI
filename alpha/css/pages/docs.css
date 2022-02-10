@@ -123,9 +123,14 @@
 
 /* ##### CODE BLOCKS ##### */
 
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .hljs {
-  width: 50rem;
-  border-radius: 0.6rem;
+  background-color: rgba(var(--color-rgb-black), 0.2) !important;
+  width: 60rem;
   border: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
@@ -135,6 +140,7 @@
     var(--color-cyan),
     var(--color-purple)
   );
+  overflow-x: auto;
 }
 
 /* ##### GRADIENT HEADING TITLES ##### */

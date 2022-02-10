@@ -484,7 +484,7 @@
   object-position: top;
 }
 
-/* #### object-hidden #### */
+/* #### Overflow #### */
 
 .overflow-x {
   overflow-x: scroll !important;
@@ -498,11 +498,20 @@
 .overflow-y-hide {
   overflow-y: hidden !important;
 }
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
 .overflow-scroll {
   overflow: scroll !important;
 }
 .overflow-hide {
   overflow: hidden !important;
+}
+.overflow-auto {
+  overflow: auto !important;
 }
 
 /* #### Box-Shadow #### */
