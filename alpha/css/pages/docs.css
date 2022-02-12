@@ -5,7 +5,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 90vh;
+  grid-template-rows: minmax(6rem, 10vh) 90vh;
   grid-template-areas: "navbar" "page-content";
   background-color: var(--color-background);
 }
