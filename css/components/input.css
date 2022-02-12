@@ -68,6 +68,17 @@
   padding-left: 4.5rem;
 }
 
+.input__radio-input:checked + .input__radio-label {
+  background-image: linear-gradient(
+    to right,
+    rgba(var(--color-rgb-purple), 1),
+    rgba(var(--color-rgb-cyan), 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .input__radio-button {
   height: 3rem;
   width: 3rem;
