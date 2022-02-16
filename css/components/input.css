@@ -129,3 +129,49 @@
   opacity: 0;
   transform: translateY(-0.6rem);
 }
+
+.input__range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+  width: 90%;
+  height: 1rem;
+  background: #4d4c53;
+  outline: none;
+}
+
+.input__range-datalist {
+  width: 90%;
+}
+
+/* slider handle */
+.input__range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-alpha);
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 15px solid rgba(234, 52, 111, 0.2);
+}
+
+.input__range-input::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none; /* firefox needs this */
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-alpha);
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 15px solid rgba(var(--color-rgb-alpha), 0.2);
+}
+
+/* progress (before knob) within Firefox */
+.input__range-input::-moz-range-progress {
+  background: var(--color-alpha);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 1rem;
+}
