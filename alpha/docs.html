@@ -1689,8 +1689,62 @@ COMPONENT BLOCK : RADIO INPUTS
   &lt/label>
 &lt/div>   
               </code></pre>
+
+              <!-- ##### COMPONENT BLOCK : RANGE INPUTS #### -->
+              <h3 class="input__component-title h3 mt-2"># Range Inputs</h3>
+              <div
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 color-white"
+              >
+
+                  <label for="priceRange" class="input__range-label h3 mb-2 w-full ml-1">Price</label>
+                  <input
+                    type="range"
+                    min="0"
+                    max="1000"
+                    value="50"
+                    step="250"
+                    list="tickmarks"
+                    id="priceRange"
+                    class="input__range-input mt-1 mb-1"
+                  />
+                  <datalist id="tickmarks" class="input__range-datalist h5 color-grey flex justify-between">
+                    <option>0</option>
+                    <option>250</option>
+                    <option>500</option>
+                    <option>750</option>
+                    <option>1000</option>
+                  </datalist>
+
+              </div>
+
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : RANGE INPUTS  
+#### -->
+
+&ltlabel for="priceRange" class="input__range-label h3 mb-2 w-full ml-1 ">Price&lt/label>
+&ltinput
+  type="range"
+  min="0"
+  max="1000"
+  value="50"
+  step="250"
+  list="tickmarks"
+  id="priceRange"
+  class="input__range-input mt-1 mb-1"
+/>
+&ltdatalist id="tickmarks" class="input__range-datalist h5 color-grey flex justify-between">
+  &ltoption>0&lt/option>
+  &ltoption>250&lt/option>
+  &ltoption>500&lt/option>
+  &ltoption>750&lt/option>
+  &ltoption>1000&lt/option>
+&lt/datalist>
+              </code></pre>
+
+              
             </div>
-            
+
           </div>
           <!-- ######################### -->
 
