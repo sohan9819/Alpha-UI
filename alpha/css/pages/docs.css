@@ -109,6 +109,10 @@
   grid-template-rows: repeat(auto-fill, auto);
 }
 
+.floating__btn__container {
+  height: max-content;
+}
+
 /* ##### CODE BLOCKS ##### */
 
 pre {

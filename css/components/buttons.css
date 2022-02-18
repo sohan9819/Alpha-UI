@@ -153,3 +153,73 @@
   justify-content: center;
   align-items: center;
 }
+
+/* ####### FLOATING ACTION BUTTONS ####### */
+
+.btn__floating__action {
+  bottom: 2rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.action__input {
+  display: none;
+}
+
+.btn__floating__action .action__logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  transition: all 0.3s ease-in-out;
+}
+
+.action__input:checked + .action__logo {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.btn__floating__action .action__options {
+  bottom: 5.5rem;
+  min-width: 20rem;
+  max-width: 25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.btn__floating__action .action__options .action__list {
+  list-style: none;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.btn__floating__action .action__options .action__list:hover {
+  color: var(--color-pink);
+  font-weight: 600;
+}
+
+.btn__floating__action .action__options .action__list:not(:last-child) {
+  border-bottom: 1px solid rgba(var(--color-rgb-alpha), 0.2);
+}
+
+.action__input:checked ~ .action__options {
+  bottom: 6.5rem;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.action__input:checked ~ .action__options .action__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+  transition: 0.3s;
+}
