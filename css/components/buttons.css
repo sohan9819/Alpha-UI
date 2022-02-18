@@ -159,8 +159,8 @@
 .btn__floating__action {
   bottom: 2rem;
   left: 2rem;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 
@@ -185,14 +185,9 @@
 }
 
 .btn__floating__action .action__options {
-  position: absolute;
-  bottom: 55px;
-  background: var(--color-black-1);
-  min-width: 200px;
-  width: max-content;
-  max-width: 250px;
-  padding: 20px;
-  border-radius: 20px;
+  bottom: 5.5rem;
+  min-width: 20rem;
+  max-width: 25rem;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -200,9 +195,6 @@
 
 .btn__floating__action .action__options .action__list {
   list-style: none;
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; */
   padding: 8px 0;
   transition: 0.3s;
 }
@@ -217,7 +209,7 @@
 }
 
 .action__input:checked ~ .action__options {
-  bottom: 65px;
+  bottom: 6.5rem;
   opacity: 1;
   visibility: visible;
   transition: 0.3s;
@@ -228,6 +220,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px 0;
+  padding: 1rem 0;
   transition: 0.3s;
 }

@@ -1362,7 +1362,7 @@ COMPONENT BLOCK : BUTTON ICONS
                   <input type="checkbox" class="action__input" id="action__input" />
                   <span class="fa-thin fa-angle-up action__logo color-purple"></span>
                   
-                  <ul class="action__options">
+                  <ul class="action__options w-max p-2 rounded-m bg-black-1 absolute">
                     <li class="action__list h4 color-white">Get Started</li>
                     <li class="action__list h4 color-white">Typography</li>
                     <li class="action__list h4 color-white">Utilities</li>
@@ -1377,10 +1377,11 @@ COMPONENT BLOCK : BUTTON ICONS
 COMPONENT BLOCK : BUTTON FLOATING ACTION
 #### -->
 
-&ltlabel class="btn__floating__action h4 bg-black-1 border-m border-purple border-solid box-shadow absolute" for="action__input">
+&ltlabel class="btn__floating__action h4 bg-black-1 border-m border-purple border-solid box-shadow rounded-f fixed" for="action__input">
   &ltinput type="checkbox" class="action__input" id="action__input" />
-  &ltspan class="action__logo color-purple">+&lt/span>
-  &ltul class="action__options">
+  &ltspan class="fa-thin fa-angle-up action__logo color-purple">&lt/span>
+  
+  &ltul class="action__options w-max p-2 rounded-m bg-black-1 absolute">
     &ltli class="action__list h4 color-white">Get Started&lt/li>
     &ltli class="action__list h4 color-white">Typography&lt/li>
     &ltli class="action__list h4 color-white">Utilities&lt/li>
