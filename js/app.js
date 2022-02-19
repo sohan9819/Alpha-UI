@@ -1,4 +1,17 @@
 /* ########## CARD OPTIONS ########## */
+const loader = document.querySelector("#preloader");
+const alphaMain = document.querySelector(".alpha");
+
+alphaMain.style.display = "none";
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loader.style.display = "none";
+    alphaMain.style.display = "";
+  }, 2000);
+});
+
+/* ########## CARD OPTIONS ########## */
 hljs.highlightAll();
 
 /* ########## CARD OPTIONS ########## */

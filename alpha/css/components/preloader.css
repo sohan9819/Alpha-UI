@@ -1,0 +1,15 @@
+/* ##### PRE LOADER ##### */
+
+#preloader {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(var(--color-rgb-background), 1) 60%,
+    rgba(var(--color-rgb-alpha), 0.2)
+  );
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+#preloader__svg {
+  transform: scale(0.2);
+}

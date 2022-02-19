@@ -32,7 +32,18 @@
     <title>ALPHA:docs</title>
   </head>
   <body>
+    <!-- ##### PRELOADER #### --> 
+    <div id="preloader" class="h-screen w-screen bg-black">
+      <img
+        class="h-screen w-screen color-black"
+        id="preloader__svg"
+        src="../assets/svg/preloader.svg"
+        alt="preloader"
+      />
+    </div>
+
     <div class="alpha">
+
       <!-- ##### NAV BAR #### -->
       <nav class="alpha__nav p-1 flex justify-between items-center gap-1">
         <h2 class="alpha__nav--logo h3">
@@ -43,11 +54,95 @@
         <div  class="h4 flex justify-end items-center gap-2 pr-2 color-white">
           <a href="https://github.com/sohan9819/Alpha-UI/tree/main" 
           target="_blank">
-            <i class="fab fa-github">&nbsp; github</i> 
-          </a>
-        </div>
+          <i class="fab fa-github">&nbsp; github</i> 
+        </a>
+      </div>
       </nav>
 
+    <!-- ##### FLOATING BUTTON FOR RESPONSIVE NAVIGATION #### -->
+
+    <label id="docs__floating__btn" class="btn__floating__action h4 bg-black-1 border-m border-purple border-solid box-shadow rounded-f fixed" for="docs__floating__input">
+      <input type="checkbox" class="action__input" id="docs__floating__input" />
+      <i class="fas fa-chevron-up action__logo color-purple"></i>
+      
+      <ul class="action__options w-max p-2 rounded-m bg-black-1 absolute overflow-auto scroll-hide">
+        <li class="action__list h4 color-white">
+          <details>
+            <summary>Get Started</summary>
+            <ul class="floating__innner__options py-1" >
+              <li class="h5 pl-1 color-white ">
+                <a href="#import_html" class=" active__effect w-full text-left rounded-s h4"># Html Imports </a>
+              </li>
+              <li class="h5 pl-1 color-white ">
+                <a href="#import_css" class=" active__effect w-full text-left rounded-s h4"># CSS Imports </a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="action__list h4 color-white">
+          <details>
+            <summary>Typography</summary>
+            <ul class="floating__innner__options py-1" >
+              <li class="h5 pl-1 color-white ">
+                <a href="#headings" class="active__effect w-full text-left rounded-s h4"># Headings</a>
+              </li>
+              <li class="h5 pl-1 color-white ">
+                 <a href="#paragraphs" class="active__effect w-full text-left rounded-s h4"># Paragraphs</a>
+              </li>
+              <li class="h5 pl-1 color-white ">
+                <a href="#font-weight" class="active__effect w-full text-left rounded-s h4"># Font-weight</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="action__list h4 color-white">
+          <details>
+            <summary>Utilities</summary>
+            <ul class="floating__innner__options py-1" >
+              <li class="h5 pl-1 color-white ">
+                <a href="#margins" class="active__effect w-full text-left rounded-s h4"># Margins</a>
+              </li>
+              <li class="h5 pl-1 color-white ">            
+                <a href="#paddings" class="active__effect w-full text-left rounded-s h4"># Paddings</a>
+              </li>
+              <li class="h5 pl-1 color-white ">            
+                <a href="#border-radius" class="active__effect w-full text-left rounded-s h4"># Border-radius</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="action__list h4 color-white">
+          <details>
+            <summary>Components</summary>
+            <ul class="floating__innner__options py-1" >
+              <li class="h5 pl-1 color-white"><a href="#avatar" class="active__effect w-full text-left rounded-s h4"># Avatar</a></li>
+              <li class="h5 pl-1 color-white"><a href="#alert" class="active__effect w-full text-left rounded-s h4"># Alert</a></li>
+              <li class="h5 pl-1 color-white"><a href="#badge" class="active__effect w-full text-left rounded-s h4"># Badge</a></li>
+              <li class="h5 pl-1 color-white"><a href="#button" class="active__effect w-full text-left rounded-s h4"># Button</a></li>
+              <li class="h5 pl-1 color-white"><a href="#card" class="active__effect w-full text-left rounded-s h4"># Card</a></li>
+              <li class="h5 pl-1 color-white"><a href="#image" class="active__effect w-full text-left rounded-s h4"># Image</a></li>
+              <li class="h5 pl-1 color-white"><a href="#inputs" class="active__effect w-full text-left rounded-s h4"># Input</a></li>
+              <li class="h5 pl-1 color-white"><a href="#list" class="active__effect w-full text-left rounded-s h4"># Lists</a></li>
+              <li class="h5 pl-1 color-white"><a href="#nav" class="active__effect w-full text-left rounded-s h4"># Navigation</a></li>
+            </ul>
+          </details>
+        </li>
+        <li class="action__list h4 color-white">
+          <details>
+            <summary>Layouts</summary>
+            <ul class="floating__innner__options py-1" >
+              <li class="h5 pl-1 color-white ">
+                <a href="#float_grid" class="active__effect w-full text-left rounded-s h4"># Floating Grids</a>
+              </li>
+              <li class="h5 pl-1 color-white ">
+                <a href="#grid" class="active__effect w-full text-left rounded-s h4"># Grids</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </label>
+    
       <!-- ##### PAGE CONTENT #### -->
       <main class="alpha-docs__main">
         <!-- #### PAGE INDEX #### -->
@@ -113,7 +208,7 @@
 
           <!-- ##### COMPONENT BLOCK : IMPORT HTML #### -->
           <div
-          class="main__component--block w-full m-auto"
+          class="main__component--block w-full m-auto my-2"
         >
           <h2 id="import_html" class="main__component--heading h2 ml-2 w-full"># Importing in Html </h2>
           <div class="max-w-screen flex justify-center items-center flex-col mt-1">
@@ -147,7 +242,7 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : HEADING #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto mb-2"
           >
             <h2 id="headings" class="main__component--heading h2 ml-2 w-full"># Headings</h2>
             <h1 class="w-full text-center color-white h1 m-1">Hello world</h1>
@@ -157,7 +252,7 @@ For importing the library from the css copy this code at the top of your css fil
             <h5 class="w-full text-center color-white h5 m-1">Hello world</h5>
             <h6 class="w-full text-center color-white h6 m-1">Hello world</h6>
             <div class="component--table w-full flex justify-center items-center">
-            <table class="table color-white">
+            <table class="table color-white mt-2">
               <tr class="table-row">
                 <th class="table-heading h3">Class</th>
                 <th class="table-heading h3">Font-size</th>
@@ -195,7 +290,7 @@ For importing the library from the css copy this code at the top of your css fil
               </tr>
             </table>
           </div>
-            <h3 class="heading__component-title h2 w-full text-center mt-2"># Grey Texts </h3>
+            <h3 class="heading__component-title h2 w-full text-center my-2"># Grey Texts </h3>
             <div class="w-full text-center h4 color-grey">
               color-grey
             </div>
@@ -212,7 +307,7 @@ For importing the library from the css copy this code at the top of your css fil
               color-dark-grey-2
             </div>
 
-            <h3 class="heading__component-title h2 w-full text-center mt-2"># Text aligns </h3>
+            <h3 class="heading__component-title h2 w-full text-center my-2"># Text aligns </h3>
 
             <div class="component--table w-full flex justify-center items-center">
               <table class="table color-white">
@@ -239,17 +334,17 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : PARAGRAPH #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="paragraphs" class="main__component--heading h2 ml-2 w-full"># Paragraphs</h2>
+            <h2 id="paragraphs" class="main__component--heading h2 ml-2 my-2 w-full"># Paragraphs</h2>
             <p class="w-full text-center color-white text-1 m-1">Hello texts</p>
             <p class="w-full text-center color-white text-2 m-1">Hello texts</p>
             <p class="w-full text-center color-white text-3 m-1">Hello texts</p>
             <p class="w-full text-center color-white text-4 m-1">Hello texts</p>
             <p class="w-full text-center color-white text-5 m-1">Hello texts</p>
             <p class="w-full text-center color-white text-6 m-1">Hello texts</p>
-            <div class="component--table w-full flex justify-center items-center">
-              <table class="table color-white">
+            <div class="component--table w-full flex justify-center items-center my-2">
+              <table class="table color-white ">
                 <tr class="table-row">
                   <th class="table-heading h3">Class</th>
                   <th class="table-heading h3">Font-size</th>
@@ -292,16 +387,16 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : FONT WEIGHT #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2"
           >
-            <h2 id="font-weight" class="main__component--heading h2 ml-2 w-full"># Font-weight</h2>
+            <h2 id="font-weight" class="main__component--heading h2 ml-2 my-2 w-full"># Font-weight</h2>
             <h1 class="w-full text-center color-white light h2">Hello world</h1>
             <h2 class="w-full text-center color-white regular h2">Hello world</h2>
             <h3 class="w-full text-center color-white semibold h2">Hello world</h3>
             <h4 class="w-full text-center color-white bold h2">Hello world</h4>
             <h5 class="w-full text-center color-white ultrabold h2">Hello world</h5>
-            <div class="component--table w-full flex justify-center items-center">
-              <table class="table color-white">
+            <div class="component--table w-full flex justify-center items-center my-2">
+              <table class="table color-white ">
                 <tr class="table-row">
                   <th class="table-heading h3">Class</th>
                   <th class="table-heading h3">Font-weight</th>
@@ -335,10 +430,10 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : MARGINS #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="margins" class="main__component--heading h2 ml-2 w-full"># Margins</h2>
-            <div class="component--table w-full flex justify-center items-center">
+            <h2 id="margins" class="main__component--heading h2 ml-2 w-full my-2"># Margins</h2>
+            <div class="component--table w-full flex justify-center items-center my-2 ">
               <table class="table color-white">
                 <tr class="table-row">
                   <th class="table-heading h3">Class</th>
@@ -371,10 +466,10 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : PADDINGS #### -->
           <div 
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="paddings" class="main__component--heading h2 ml-2 w-full"># Paddings</h2>
-            <div class="component--table w-full flex justify-center items-center">
+            <h2 id="paddings" class="main__component--heading h2 ml-2 my-2  w-full"># Paddings</h2>
+            <div class="component--table w-full flex justify-center items-center my-2 ">
               <table class="table color-white">
                 <tr class="table-row">
                   <th class="table-heading h3">Class</th>
@@ -407,16 +502,16 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : BORDER RADIUS #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="border-radius" class="main__component--heading h2 ml-2 w-full "># Border-radius</h2>
-            <div class="w-full mt-1 flex justify-center items-center gap-2 flex-wrap">
+            <h2 id="border-radius" class="main__component--heading h2 ml-2 my-2 w-full"># Border-radius</h2>
+            <div class="w-full my-2  flex justify-center items-center gap-2 flex-wrap">
               <div class="border-rd__examples rounded-s"></div>
               <div class="border-rd__examples rounded-m"></div>
               <div class="border-rd__examples rounded-l"></div>
               <div class="border-rd__examples rounded-f"></div>
             </div>
-            <div class="component--table w-full flex justify-center items-center">
+            <div class="component--table w-full flex justify-center items-center my-2 ">
               <table class="table color-white">
                 <tr class="table-row">
                   <th class="table-heading h3">Class</th>
@@ -447,14 +542,14 @@ For importing the library from the css copy this code at the top of your css fil
 
           <!-- ##### COMPONENT BLOCK : AVATAR #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="avatar" class="main__component--heading h2 ml-2 w-full "># Avatar</h2>
+            <h2 id="avatar" class="main__component--heading h2 ml-2 w-full my-2 "># Avatar</h2>
             
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Basic</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2 ">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3 by-2 "># Avatar Basic</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2  mb-1"
               >
                 <div class="avatar__basic-s rounded-f">
                   <img
@@ -502,7 +597,7 @@ For importing the library from the css copy this code at the top of your css fil
                 </div>
               </div>
 
-              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen">
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen my-2 ">
                 
 &lt!-- ##### AVATAR : small #### -->
 &ltdiv class="avatar__basic-s rounded-f">
@@ -558,10 +653,10 @@ For importing the library from the css copy this code at the top of your css fil
               </code></pre>
             </div>
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Variants</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2 ">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3 mb-2 "># Avatar Variants</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2"
               >
                 <div class="avatar__basic-l rounded-s">
                   <img
@@ -672,10 +767,10 @@ AVATAR : full rounded border
               </code></pre>
             </div>
 
-            <div class="w-full flex justify-center items-center flex-col">
-              <h3 class="avatar__component-title w-full max-w-screen text-center h3"># Avatar Text/Icon</h3>
+            <div class="w-full flex justify-center items-center flex-col my-2 ">
+              <h3 class="avatar__component-title w-full max-w-screen text-center h3 mb-2 "># Avatar Text/Icon</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2  color-white"
               >
                 <div class="avatar__text-m rounded-f bg-pink">
                   <h2 class="h2">AT</h2>
@@ -723,37 +818,37 @@ Icons are from linea fonts which comes integrated with this library .
 
           <!-- ##### COMPONENT BLOCK : ALERTS #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2 "
           >
-            <h2 id="alert" class="main__component--heading h2 ml-2 w-full"># Alerts</h2>
+            <h2 id="alert" class="main__component--heading h2 ml-2 w-full my-2"># Alerts</h2>
 
             <!-- ##### COMPONENT BLOCK : ALERTS BASIC #### -->
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="alert__component-title h3"># Alert Basic</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col overflow-x-auto">
-                <div class="alert__basic-error h4 rounded-s">
+            <div class="max-w-screen flex justify-center items-center flex-col my-2 ">
+              <h3 class="alert__component-title h3 mb-2"># Alert Basic</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col overflow-x-auto my-2">
+                <div class="alert__basic-error h4 rounded-s my-1">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-warning h4 rounded-s">
+                <div class="alert__basic-warning h4 rounded-s my-1">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-info h4 rounded-s">
+                <div class="alert__basic-info h4 rounded-s my-1">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__basic-success h4 rounded-s">
+                <div class="alert__basic-success h4 rounded-s my-1">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
@@ -803,31 +898,31 @@ COMPONENT BLOCK : ALERTS BASIC
 
             <!-- ##### COMPONENT BLOCK : ALERTS OUTLINE #### -->
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="alert__component-title h3"># Alert Outline</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col overflow-x-auto">
-                <div class="alert__outline-error h4 rounded-s">
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="alert__component-title h3 mb-2"># Alert Outline</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col overflow-x-auto my-2">
+                <div class="alert__outline-error h4 rounded-s my-1">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-warning h4 rounded-s">
+                <div class="alert__outline-warning h4 rounded-s my-1">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-info h4 rounded-s">
+                <div class="alert__outline-info h4 rounded-s my-1">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__outline-success h4 rounded-s">
+                <div class="alert__outline-success h4 rounded-s my-1">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
@@ -874,31 +969,31 @@ COMPONENT BLOCK : ALERTS OUTLINE
 
             <!-- ##### COMPONENT BLOCK : ALERTS FILL #### -->
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="alert__component-title h3"># Alert Fill</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 flex-col overflow-x-auto">
-                <div class="alert__fill-error h4 rounded-s">
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="alert__component-title h3 mb-2"># Alert Fill</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 flex-col overflow-x-auto">
+                <div class="alert__fill-error h4 rounded-s my-1">
                   <i class="fas fa-exclamation alert__icon"></i>
                   <p class="alert__text">
                     This is an error alert — check it out !
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-warning h4 rounded-s">
+                <div class="alert__fill-warning h4 rounded-s my-1">
                   <i class="fas fa-exclamation-triangle alert__icon"></i>
                   <p class="alert__text">
                     This is a warning alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-info h4 rounded-s">
+                <div class="alert__fill-info h4 rounded-s my-1">
                   <i class="fas fa-info-circle alert__icon"></i>
                   <p class="alert__text">
                     This is an info alert — check it out!
                   </p>
                   <span class="alert__close">&#10006;</span>
                 </div>
-                <div class="alert__fill-success h4 rounded-s">
+                <div class="alert__fill-success h4 rounded-s my-1">
                   <i class="fas fa-check-circle alert__icon"></i>
                   <p class="alert__text">
                     This is a success alert — check it out!
@@ -946,10 +1041,10 @@ COMPONENT BLOCK : ALERTS FILL
 
           <!-- ##### COMPONENT BLOCK : BADGES #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2"
           >
-            <h2 id="badge" class="main__component--heading h2 ml-2 w-full"># Badges</h2>
-            <div class="component--table w-full flex justify-center items-center">
+            <h2 id="badge" class="main__component--heading h2 ml-2 w-full my-2"># Badges</h2>
+            <div class="component--table w-full flex justify-center items-center my-2">
               <table class="table color-white">
                 <tr class="table-row">
                   <th class="table-heading h3">Letters</th>
@@ -973,10 +1068,10 @@ COMPONENT BLOCK : ALERTS FILL
                 </tr>
               </table>
             </div>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
               <!-- BADGE BASIC ICON -->
-              <h3 class="badge__component-title h3 mt-2"># Badge Icon</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+              <h3 class="badge__component-title h3 mb-2"># Badge Icon</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white">
                 <i
                   class="feature-box__icon icon-basic-cloud badge__basic-icon-xl h1"
                 ></i>
@@ -1011,8 +1106,8 @@ BADGES BASICS ICONS
               </code></pre>
 
               <!-- BADGE BASIC TEXT-->
-              <h3 class="badge__component-title h3 mt-2"># Badge Text</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap mt-1 mb-1 color-white">
+              <h3 class="badge__component-title h3 mb-2"># Badge Text</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap my-2 color-white">
                 <h1 class="h1 badge__basic-text-xl">TEXT</h1>
                 <h2 class="h2 badge__basic-text-l">TEXT</h2>
                 <h3 class="h3 badge__basic-text-m">TEXT</h3>
@@ -1031,8 +1126,8 @@ BADGES BASICS TEXT
               </code></pre>
 
               <!-- BADGE BASIC CONTENT -->
-              <h3 class="badge__component-title h3 mt-2"># Badge Content</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap mt-1 mb-1 color-white">
+              <h3 class="badge__component-title h3 mb-2"># Badge Content</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap my-2 color-white">
                 <i
                   class="feature-box__icon icon-basic-server2 badge__basic-content-xl h1"
                 ></i>
@@ -1068,14 +1163,14 @@ class="feature-box__icon icon-basic-rss badge__basic-content-m h3"
 
           <!-- ##### COMPONENT BLOCK : BUTTONS #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2"
           >
-            <h2 id="button" class="main__component--heading h2 ml-2 w-full"># Buttons</h2>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+            <h2 id="button" class="main__component--heading h2 ml-2 w-full my-2"># Buttons</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
 
               <!-- ##### COMPONENT BLOCK : BUTTONS BASIC TYPES #### -->
-              <h3 class="button__component-title h3 mt-2"># Button Types</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+              <h3 class="button__component-title h3 my-2"># Button Types</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
                 <a
                   href="#"
@@ -1144,8 +1239,8 @@ COMPONENT BLOCK : BUTTON LINK
               </code></pre>
 
               <!-- ##### COMPONENT BLOCK : BUTTON BASIC SIZE  #### -->
-              <h3 class="button__component-title h3 mt-2"># Button Sizes</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+              <h3 class="button__component-title h3 my-2"># Button Sizes</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
                 <a
                   href="#"
@@ -1193,9 +1288,9 @@ COMPONENT BLOCK : BUTTON SIZES
               </code></pre>
 
               <!-- ##### COMPONENT BLOCK : BUTTONS STYLES #### -->
-              <h3 class="button__component-title h3 mt-2"># Button Styles</h3>
+              <h3 class="button__component-title h3 my-2"># Button Styles</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
                 <a
                   href="#"
@@ -1292,9 +1387,9 @@ COMPONENT BLOCK : BUTTON BASIC
               </code></pre>
 
               <!-- ##### COMPONENT BLOCK : BUTTONS ICONS #### -->
-              <h3 class="button__component-title h3 mt-2"># Button Icons</h3>
+              <h3 class="button__component-title h3 my-2"># Button Icons</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
                 <a
                   href="#"
@@ -1354,13 +1449,13 @@ COMPONENT BLOCK : BUTTON ICONS
               </code></pre>
               
               <!-- ##### COMPONENT BLOCK : BUTTON FLOATING ACTION #### -->
-              <h3 class="button__component-title h3 mt-2"># Button Floating Actions</h3>
+              <h3 class="button__component-title h3 my-2"># Button Floating Actions</h3>
               <div
-                class="w-max floating__btn__container flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 py-4 pr-6 color-white relative"
+                class="w-max floating__btn__container flex justify-center items-center gap-1 flex-wrap my-2 py-4 pr-6 color-white relative"
               >
                 <label class="btn__floating__action h4 bg-black-1 border-m border-purple border-solid box-shadow rounded-f absolute" for="action__input">
                   <input type="checkbox" class="action__input" id="action__input" />
-                  <span class="fa-thin fa-angle-up action__logo color-purple"></span>
+                  <i class="fas fa-chevron-up action__logo color-purple"></i>
                   
                   <ul class="action__options w-max p-2 rounded-m bg-black-1 absolute">
                     <li class="action__list h4 color-white">Get Started</li>
@@ -1390,23 +1485,20 @@ COMPONENT BLOCK : BUTTON FLOATING ACTION
   &lt/ul>
 &lt/label>
               </code></pre>
-
-              
-
             </div>
           </div>
           <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : CARDS #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto  my-2"
           >
             <h2 id="card" class="main__component--heading h2 ml-2 w-full"># Cards</h2>
 
             <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="card__component-title h3 mt-2"># Card Types</h3>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="card__component-title h3 my-2"># Card Types</h3>
               <select name="cards" id="card__option" class="rounded-m h4 m-1 bg-white">
                 <option value="card__basic">card__basic</option>
                 <option value="card__basic__header">card__basic__header</option>
@@ -1424,7 +1516,7 @@ COMPONENT BLOCK : BUTTON FLOATING ACTION
                 </option>
               </select>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white overflow-x-auto"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white overflow-x-auto"
               >
                 <div class="card card__basic">
                   <div class="card__content-box">
@@ -1528,17 +1620,17 @@ Change the class name of this main container
 
           <!-- ##### COMPONENT BLOCK : IMAGE #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2"
           >
-            <h2 id="image" class="main__component--heading h2 ml-2 w-full"># Images</h2>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+            <h2 id="image" class="main__component--heading h2 ml-2 w-full my-2"># Images</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col mt-2">
               <!-- ##### COMPONENT BLOCK : RESPONSIVE IMAGES #### -->
-              <h3 class="image__component-title h3 mt-2"># Responsive Images</h3>
+              <h3 class="image__component-title h3 my-2"># Responsive Images</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
 
-              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover ">
+                <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover ">
                 
               </div>
               <!-- #### CODE #### -->
@@ -1553,11 +1645,11 @@ COMPONENT BLOCK : IMAGE RESPONSIVE
               <!-- ##### COMPONENT BLOCK : ROUNDED IMAGES #### -->
               <h3 class="image__component-title h3 mt-2"># Rounded Images</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
 
-              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-l mb-2">
-              <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-f">
+                <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-l mb-2">
+                <img src="https://source.unsplash.com/random/500x500" alt="random demo image" class="w-full object-cover rounded-f">
                   
               </div>
               <!-- #### CODE #### -->
@@ -1575,18 +1667,18 @@ COMPONENT BLOCK : IMAGE ROUNDED
 
           <!-- ##### COMPONENT BLOCK : INPUT #### -->
           <div
-            class="main__component--block w-full m-auto"
+            class="main__component--block w-full m-auto my-2"
           >
-            <h2 id="inputs" class="main__component--heading h2 ml-2 w-full"># Inputs</h2>
+            <h2 id="inputs" class="main__component--heading h2 ml-2 w-full my-2"># Inputs</h2>
 
             <!-- ##### COMPONENT BLOCK : INPUT TYPES #### -->
 
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
 
               <!-- ##### COMPONENT BLOCK : TEXT INPUTS #### -->
               <h3 class="input__component-title h3 mt-2"># Text Inputs</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap flex-col mt-2 mb-2 color-white pt-1"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap flex-col my-2 color-white pt-1"
               >
                 <div class="input__text-group">
                   <input
@@ -1669,7 +1761,7 @@ COMPONENT BLOCK : TEXT INPUTS
               <!-- ##### COMPONENT BLOCK : RADIO INPUTS #### -->
               <h3 class="input__component-title h3 mt-2"># Radio Inputs</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
                   <div class="input__radio-group mt-1">
                     <input
@@ -1733,7 +1825,7 @@ COMPONENT BLOCK : RADIO INPUTS
               <!-- ##### COMPONENT BLOCK : RANGE INPUTS #### -->
               <h3 class="input__component-title h3 mt-2"># Range Inputs</h3>
               <div
-                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 color-white"
+                class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white"
               >
 
                   <label for="priceRange" class="input__range-label h3 mb-2 w-full ml-1">Price</label>
@@ -1781,19 +1873,17 @@ COMPONENT BLOCK : RANGE INPUTS
   &ltoption>1000&lt/option>
 &lt/datalist>
               </code></pre>
-
-              
             </div>
 
           </div>
           <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : LIST #### -->
-          <div class="main__component--block w-full m-auto">
-            <h2 id="list" class="main__component--heading h2 ml-2 w-full"># Lists</h2>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="list__component-title h3 mt-2"># Spaced Lists</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+          <div class="main__component--block w-full m-auto my-2">
+            <h2 id="list" class="main__component--heading h2 ml-2 my-2 w-full"># Lists</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="list__component-title h3 my-2"># Spaced Lists</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white">
                 <ul class="w-max bg-black-1 p-1 flex justify-center items-start flex-col gap-1 rounded-m box-shadow">
                   <h2 class="h3 color-purple">
                     Simple Lists
@@ -1836,8 +1926,9 @@ COMPONENT BLOCK : SPACED LISTS
   &ltli class="list__item w-full h4 color-pink">&rArr; Item 4&lt/li>
 &lt/ul>
               </code></pre>
-              <h3 class="list__component-title h3 mt-2"># Stacked Lists</h3>
-              <div class="w-full max-w-screen flex justify-center items-center  flex-wrap mt-1 mb-1 color-white">
+
+              <h3 class="list__component-title h3 my-2"># Stacked Lists</h3>
+              <div class="w-full max-w-screen flex justify-center items-center  flex-wrap my-2 color-white">
                 <ul class="list__stack w-max flex justify-center items-start flex-col gap-1 rounded-m ">
                   <h2 class="h3 color-red">
                     Stacked Lists
@@ -1921,11 +2012,11 @@ COMPONENT BLOCK : STACKED LISTS
           <!-- ######################### -->
 
           <!-- ##### COMPONENT BLOCK : NAVIGATION #### -->
-          <div class="main__component--block w-full m-auto">
-            <h2 id="nav" class="main__component--heading h2 ml-2 w-full"># Navigation</h2>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <h3 class="nav__component-title h3 mt-2"># Desktop Simple</h3>
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-1 mb-1 color-white">
+          <div class="main__component--block w-full m-auto my-2">
+            <h2 id="nav" class="main__component--heading h2 ml-2 w-full my-2"># Navigation</h2>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="nav__component-title h3 my-2"># Desktop Simple</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white">
                 <nav class="alpha__nav p-1 flex justify-between items-center flex-wrap gap-1">
                   <h2 class="alpha__nav--logo h3">
                     <a href="#" class="alpha__nav--logo-main">ALPHA</a>
@@ -1976,10 +2067,10 @@ COMPONENT BLOCK : DESKTOP NAVIGATION
 <!-- ##### COMPONENT BLOCK : LAYOUTS #### -->
           
           <!-- ##### COMPONENT BLOCK : FLOAT GRIDS #### -->
-          <div class="main__component--block w-full m-auto">
-            <h2 id="float_grid" class="main__component--heading h2 ml-2 w-full"># Floating Grid Layouts </h2>
-            <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 flex-col color-white h4 color-black-1 mr-1">
+          <div class="main__component--block w-full m-auto my-2">
+            <h2 id="float_grid" class="main__component--heading h2 ml-2 w-full my-2"># Floating Grid Layouts </h2>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 flex-col color-white h4 color-black-1 mr-1">
                 <div class="row">
                   <div class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2</div>
                   <div class="col-1-0f-2 p-1 bg-orange text-center rounded-s">Col 1 of 2</div>
@@ -2047,22 +2138,22 @@ COMPONENT BLOCK : Floating Grid Layouts
           </div>
           <!-- ######################### -->
 
-                    <!-- ##### COMPONENT BLOCK : FLOAT GRIDS #### -->
-                    <div class="main__component--block w-full m-auto">
-                      <h2 id="grid" class="main__component--heading h2 ml-2 w-full"># Grid Layouts </h2>
-                      <div class="max-w-screen flex justify-center items-center flex-col mt-1">
-                        <h3 class="grid__component-title h3 mt-2"># Grid 2 Columns Layout </h3>
-                        <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 flex-col color-white h4 color-black-1 mr-1">
-                          <div class="grid grid-2 gap-2 w-full max-w-screen">
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                          </div>
-                        </div>
-                        <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+          <!-- ##### COMPONENT BLOCK : GRIDS #### -->
+          <div class="main__component--block w-full m-auto my-2">
+            <h2 id="grid" class="main__component--heading h2 ml-2 w-full"># Grid Layouts </h2>
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="grid__component-title h3 my-2"># Grid 2 Columns Layout </h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 flex-col color-white h4 color-black-1 mr-1">
+                <div class="grid grid-2 gap-2 w-full max-w-screen">
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                </div>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
 &lt!-- ##### 
 COMPONENT BLOCK : Grid 2 Columns Layout 
 #### -->
@@ -2075,19 +2166,20 @@ COMPONENT BLOCK : Grid 2 Columns Layout
   &ltdiv class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items&lt/div>
   &ltdiv class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items&lt/div>
 &lt/div>
-                        </code></pre>
-                        <h3 class="grid__component-title h3 mt-2"># Grid 3 Columns Layout </h3>
-                        <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap mt-2 mb-2 flex-col color-white h4 color-black-1 mr-1">
-                          <div class="grid grid-3 gap-2 w-full max-w-screen">
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                            <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
-                          </div>
-                        </div>
-                        <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
+              </code></pre>
+                        
+              <h3 class="grid__component-title h3 my-2"># Grid 3 Columns Layout </h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 flex-col color-white h4 color-black-1 mr-1">
+                <div class="grid grid-3 gap-2 w-full max-w-screen">
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                  <div class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items</div>
+                </div>
+              </div>
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto mt-2 mb-1">
 &lt!-- ##### 
 COMPONENT BLOCK : Grid 3 Columns Layout 
 #### -->
@@ -2100,9 +2192,9 @@ COMPONENT BLOCK : Grid 3 Columns Layout
   &ltdiv class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items&lt/div>
   &ltdiv class="h4 bg-yellow color-black-1 text-center w-full p-1 rounded-s">Grid Items&lt/div>
 &lt/div>
-                        </code></pre>
-                      </div>
-                    </div>
+              </code></pre>
+            </div>
+          </div>
                     <!-- ######################### -->
         </article>
       </main>
