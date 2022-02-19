@@ -238,6 +238,7 @@ pre {
   );
   padding: 0rem 1rem;
   color: var(--color-background);
+  backdrop-filter: blur(2px);
 }
 
 /* ############### MEDIA QUERY ############### */
