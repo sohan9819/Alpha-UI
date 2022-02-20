@@ -1,0 +1,17 @@
+.modal__large {
+  max-width: 90vw;
+  width: 60rem;
+  height: max-content;
+  max-height: 80vh;
+}
+
+.modal__small {
+  max-width: 90vw;
+  width: 40rem;
+  height: max-content;
+  max-height: 80vh;
+}
+
+.modal__scroll .modal__main {
+  max-height: 10rem;
+}

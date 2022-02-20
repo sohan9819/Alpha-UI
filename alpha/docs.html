@@ -120,6 +120,7 @@
               <li class="h5 pl-1 color-white"><a href="#badge" class="active__effect w-full text-left rounded-s h4"># Badge</a></li>
               <li class="h5 pl-1 color-white"><a href="#button" class="active__effect w-full text-left rounded-s h4"># Button</a></li>
               <li class="h5 pl-1 color-white"><a href="#card" class="active__effect w-full text-left rounded-s h4"># Card</a></li>
+              <li class="h5 pl-1 color-white"><a href="#modal" class="active__effect w-full text-left rounded-s h4"># Modals</a></li>
               <li class="h5 pl-1 color-white"><a href="#image" class="active__effect w-full text-left rounded-s h4"># Image</a></li>
               <li class="h5 pl-1 color-white"><a href="#inputs" class="active__effect w-full text-left rounded-s h4"># Input</a></li>
               <li class="h5 pl-1 color-white"><a href="#list" class="active__effect w-full text-left rounded-s h4"># Lists</a></li>
@@ -179,6 +180,7 @@
             <a href="#badge" class="active__effect w-full text-left rounded-s h4"># Badge</a>
             <a href="#button" class="active__effect w-full text-left rounded-s h4"># Button</a>
             <a href="#card" class="active__effect w-full text-left rounded-s h4"># Card</a>
+            <a href="#modal" class="active__effect w-full text-left rounded-s h4"># Modals</a>
             <a href="#image" class="active__effect w-full text-left rounded-s h4"># Image</a>
             <a href="#inputs" class="active__effect w-full text-left rounded-s h4"># Input</a>
             <a href="#list" class="active__effect w-full text-left rounded-s h4"># Lists</a>
@@ -1611,6 +1613,128 @@ Change the class name of this main container
         &lti class="fas fa-ellipsis-v">&lt/i>
       &lt/a>
     &lt/div>
+  &lt/div>
+&lt/div>
+              </code></pre>
+            </div>
+          </div>
+          <!-- ######################### -->
+
+          <!-- ##### COMPONENT BLOCK : MODALS #### -->
+          <div
+            class="main__component--block w-full m-auto  my-2"
+          >
+            <h2 id="modal" class="main__component--heading h2 ml-2 w-full"># MODALS</h2>
+
+            <!-- ##### COMPONENT BLOCK : MODAL TYPES #### -->
+
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <!-- <h3 class="card__component-title h3 my-2"># Modal Types</h3> -->
+              <div
+                class="w-full max-w-screen flex justify-center items-center gap-2 flex-wrap my-2 color-white overflow-x-auto"
+              >
+                <div class="modal__large bg-black-1 box-shadow rounded-s p-1">
+                  <div class="modal__header flex justify-between align-center ">
+                    <h2 class="h2 p-1">Modal Title</h2>
+                    <i class="far fa-times h3 btn--small h-max w-max rounded-s btn__alpha-text pointer"></i>
+                  </div>
+                  <div class="modal__main p-1">
+                    <p class="p2 w-full text-left text-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?</p>
+                  </div>
+                  <div class="modal__footer flex justify-end align-center gap-1 p-1">
+                    <button
+                    class="uppercase h5 btn--small rounded-s btn__basic-secondary color-white "
+                    >
+                    Close
+                  </button>
+                  <button
+                    class="uppercase h5 btn--small rounded-s btn__basic-primary color-white "
+                  >
+                    Save Changes
+                  </button>
+                  </div>
+                </div>
+
+                <div class="modal__scroll modal__small bg-black-1 box-shadow rounded-s p-1">
+                  <div class="modal__header flex justify-between align-center ">
+                    <h2 class="h2 p-1">Modal Title</h2>
+                    <i class="far fa-times h3 btn--small h-max w-max rounded-s btn__alpha-text pointer"></i>
+                  </div>
+                  <div class="modal__main p-1 overflow-y-auto ">
+                    <p class="p2 w-full text-left text-4 ">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?
+                    </p>
+                  </div>
+                  <div class="modal__footer flex justify-end align-center gap-1 p-1">
+                    <button
+                    class="uppercase h5 btn--small rounded-s btn__basic-secondary color-white "
+                    >
+                    Close
+                  </button>
+                  <button
+                    class="uppercase h5 btn--small rounded-s btn__basic-primary color-white "
+                  >
+                    Save Changes
+                  </button>
+                  </div>
+                </div>
+
+              </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : MODALS
+#### -->
+
+
+&lt!-- MODAL BASIC LARGE -->
+&ltdiv class="modal__basic modal__large bg-black-1 box-shadow rounded-s p-1">
+  &ltdiv class="modal__header flex justify-between align-center ">
+    &lth2 class="h2 p-1">Modal Title&lt/h2>
+    &lti class="far fa-times h3 btn--small h-max w-max rounded-s btn__alpha-text pointer">&lt/i>
+  &lt/div>
+  &ltdiv class="modal__main p-1">
+    &ltp class="p2 w-full text-left text-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?&lt/p>
+  &lt/div>
+  &ltdiv class="modal__footer flex justify-end align-center gap-1 p-1">
+    &ltbutton
+    class="uppercase h5 btn--small rounded-s btn__basic-secondary color-white "
+    >
+    Close
+  &lt/button>
+  &ltbutton
+    class="uppercase h5 btn--small rounded-s btn__basic-primary color-white "
+  >
+    Save Changes
+  &lt/button>
+  &lt/div>
+&lt/div>
+
+
+&lt!-- MODAL SCROLL SMALL -->
+&ltdiv class="modal__scroll modal__small bg-black-1 box-shadow rounded-s p-1">
+  &ltdiv class="modal__header flex justify-between align-center ">
+    &lth2 class="h2 p-1">Modal Title&lt/h2>
+    &lti class="far fa-times h3 btn--small h-max w-max rounded-s btn__alpha-text pointer">&lt/i>
+  &lt/div>
+  &ltdiv class="modal__main p-1 overflow-y-auto ">
+    &ltp class="p2 w-full text-left text-4 ">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui nesciunt quam, dolore quaerat fugiat, sapiente laboriosam dicta fuga consequatur, hic labore pariatur accusantium consectetur culpa! Sunt tenetur libero vel?
+    &lt/p>
+  &lt/div>
+  &ltdiv class="modal__footer flex justify-end align-center gap-1 p-1">
+    &ltbutton
+    class="uppercase h5 btn--small rounded-s btn__basic-secondary color-white "
+    >
+    Close
+  &lt/button>
+  &ltbutton
+    class="uppercase h5 btn--small rounded-s btn__basic-primary color-white "
+  >
+    Save Changes
+  &lt/button>
   &lt/div>
 &lt/div>
               </code></pre>
