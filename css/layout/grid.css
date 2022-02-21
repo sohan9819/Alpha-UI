@@ -25,8 +25,48 @@
   grid-template-rows: repeat(auto, 1fr);
 }
 
-/* Grid 2 Columns  */
+/* Grid 3 Columns  */
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 1fr);
+}
+
+/* Grid Holy Layout  */
+.grid-holy {
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+  grid-template-rows: min-content min-content 1fr min-content;
+  grid-template-areas:
+    "header header"
+    "aside nav"
+    "aside article"
+    "footer footer";
+}
+
+.holy__header {
+  grid-area: header;
+}
+.holy__nav {
+  grid-area: nav;
+}
+.holy__article {
+  grid-area: article;
+}
+.holy__aside {
+  grid-area: aside;
+}
+.holy__footer {
+  grid-area: footer;
+}
+
+@media (max-width: 600px) {
+  .grid-holy {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "article"
+      "aside"
+      "footer";
+  }
 }
