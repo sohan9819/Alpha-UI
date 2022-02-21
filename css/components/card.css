@@ -7,6 +7,27 @@
   border-radius: 0.6rem;
   overflow: hidden;
   box-shadow: 0 1rem 2rem rgba(17, 17, 17, 0.2);
+  position: relative;
+}
+
+.card__dismiss {
+  position: relative;
+}
+
+.card__dismiss::before {
+  content: "DISMISS";
+  font-size: 3rem;
+  font-weight: 600;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-red);
+  background: rgba(var(--color-rgb-white-1), 0.8);
+  z-index: 20;
 }
 
 .card__basic {

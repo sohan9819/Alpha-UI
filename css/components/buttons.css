@@ -154,6 +154,28 @@
   align-items: center;
 }
 
+.btn__icon-s:active,
+.btn__icon-s:hover,
+.btn__icon-m:active,
+.btn__icon-m:hover,
+.btn__icon-l:active,
+.btn__icon-l:hover,
+.btn__icon-xl:active,
+.btn__icon-xl:hover {
+  background: rgba(var(--color-rgb-alpha), 0.6);
+}
+
+.btn__icon:active,
+.btn__icon:hover,
+.btn__icon:active,
+.btn__icon:hover,
+.btn__icon:active,
+.btn__icon:hover,
+.btn__icon:active,
+.btn__icon:hover {
+  background: rgba(var(--color-rgb-alpha), 0.4);
+}
+
 /* ####### FLOATING ACTION BUTTONS ####### */
 
 .btn__floating__action {
