@@ -46,3 +46,15 @@ iframe {
   object-fit: contain;
   object-position: top center;
 } */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,4 +1,4 @@
-/* ########## CARD OPTIONS ########## */
+/* ########## Preloader ########## */
 const loader = document.querySelector("#preloader");
 const alphaMain = document.querySelector(".alpha");
 
@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   }, 2000);
 });
 
-/* ########## CARD OPTIONS ########## */
+/* ########## CODE BOXS ########## */
 hljs.highlightAll();
 
 /* ########## CARD OPTIONS ########## */
