@@ -89,3 +89,27 @@
 .captilize {
   text-transform: capitalize;
 }
+
+/* Decoration */
+
+.underline {
+  text-decoration: underline;
+}
+.dashed {
+  text-decoration: dashed;
+}
+.dottted {
+  text-decoration: dotted;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.overline {
+  text-decoration: overline;
+}
+.wavy {
+  text-decoration: wavy;
+}
+.solid {
+  text-decoration: solid;
+}

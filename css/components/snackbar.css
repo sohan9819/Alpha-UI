@@ -1,0 +1,36 @@
+.snackbar__success::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 100%;
+  background: var(--color-green);
+  left: 0;
+  top: 0;
+}
+.snackbar__danger::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 100%;
+  background: var(--color-red);
+  left: 0;
+  top: 0;
+}
+.snackbar__warning::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 100%;
+  background: var(--color-yellow);
+  left: 0;
+  top: 0;
+}
+.snackbar__info::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 100%;
+  background: var(--color-indigo-1);
+  left: 0;
+  top: 0;
+}

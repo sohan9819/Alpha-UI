@@ -120,6 +120,7 @@
               <li class="h5 pl-1 color-white"><a href="#badge" class="active__effect w-full text-left rounded-s h4"># Badge</a></li>
               <li class="h5 pl-1 color-white"><a href="#button" class="active__effect w-full text-left rounded-s h4"># Button</a></li>
               <li class="h5 pl-1 color-white"><a href="#card" class="active__effect w-full text-left rounded-s h4"># Card</a></li>
+              <li class="h5 pl-1 color-white"><a href="#snackbar" class="active__effect w-full text-left rounded-s h4"># Snackbar</a></li>
               <li class="h5 pl-1 color-white"><a href="#modal" class="active__effect w-full text-left rounded-s h4"># Modals</a></li>
               <li class="h5 pl-1 color-white"><a href="#image" class="active__effect w-full text-left rounded-s h4"># Image</a></li>
               <li class="h5 pl-1 color-white"><a href="#inputs" class="active__effect w-full text-left rounded-s h4"># Input</a></li>
@@ -180,6 +181,7 @@
             <a href="#badge" class="active__effect w-full text-left rounded-s h4"># Badge</a>
             <a href="#button" class="active__effect w-full text-left rounded-s h4"># Button</a>
             <a href="#card" class="active__effect w-full text-left rounded-s h4"># Card</a>
+            <a href="#snackbar" class="active__effect w-full text-left rounded-s h4"># Snackbar</a>
             <a href="#modal" class="active__effect w-full text-left rounded-s h4"># Modals</a>
             <a href="#image" class="active__effect w-full text-left rounded-s h4"># Image</a>
             <a href="#inputs" class="active__effect w-full text-left rounded-s h4"># Input</a>
@@ -1614,6 +1616,87 @@ Change the class name of this main container
       &lt/a>
     &lt/div>
   &lt/div>
+&lt/div>
+              </code></pre>
+            </div>
+          </div>
+          <!-- ######################### -->
+          <!-- ##### COMPONENT BLOCK : SNACKBAR #### -->
+          <div
+            class="main__component--block w-full m-auto  my-2"
+          >
+            <h2 id="snackbar" class="main__component--heading h2 ml-2 w-full"># Snackbar</h2>
+
+            <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
+
+            <div class="max-w-screen flex justify-center items-center flex-col my-2">
+              <h3 class="card__component-title h3 my-2">#Snackbar Types</h3>
+              <div
+                class="w-max max-w-screen flex justify-center items-end gap-1 flex-col my-2 color-white overflow-x-auto"
+              >
+
+              <div class="w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s">
+                <p class="pr-2 text-4 ">Something went worng . . .</p>
+                <a href="#" class="color-purple underline  h4">Reset</a>
+                <span class=" h4 h-max w-max pl-2 pointer color-white">&#10006;</span>
+              </div>
+
+              <div class="snackbar__success w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+                <p class="pl-1 pr-2 text-4 ">Snackbar careted successfully!</p>
+                <span class=" h4 h-max w-max pl-2 pointer color-white">&#10006;</span>
+              </div>
+
+              <div class="snackbar__danger w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+                <p class="pl-1 pr-2 text-4 ">Could not do the thing</p>
+                <span class=" h4 h-max w-max pl-2 pointer color-white">&#10006;</span>
+              </div>
+
+              <div class="snackbar__warning w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+                <p class="pl-1 pr-2 text-4 ">Alert!  Something is happening that you may not expect!</p>
+                <span class=" h4 h-max w-max pl-2 pointer color-white">&#10006;</span>
+              </div>
+
+              <div class="snackbar__info w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+                <p class="pl-1 pr-2 text-4 ">Heres some info for you</p>
+                <span class=" h4 h-max w-max pl-2 pointer color-white">&#10006;</span>
+              </div>
+
+              </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : SNACKBARS
+#### -->
+
+&lt!-- COMPONENT BLOCK : SNACKBAR BASIC -->
+&ltdiv class="w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s">
+  &ltp class="pr-2 text-4 ">Something went worng . . .&lt/p>
+  &lta href="#" class="color-purple underline  h4">Reset&lt/a>
+  &ltspan class=" h4 h-max w-max pl-2 pointer color-white">&#10006;&lt/span>
+&lt/div>
+
+&lt!-- COMPONENT BLOCK : SNACKBAR SUCCESS -->
+&ltdiv class="snackbar__success w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+  &ltp class="pl-1 pr-2 text-4 ">Snackbar careted successfully!&lt/p>
+  &ltspan class=" h4 h-max w-max pl-2 pointer color-white">&#10006;&lt/span>
+&lt/div>
+
+&lt!-- COMPONENT BLOCK : SNACKBAR DANGER -->
+&ltdiv class="snackbar__danger w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+  &ltp class="pl-1 pr-2 text-4 ">Could not do the thing&lt/p>
+  &ltspan class=" h4 h-max w-max pl-2 pointer color-white">&#10006;&lt/span>
+&lt/div>
+
+&lt!-- COMPONENT BLOCK : SNACKBAR WARNING -->
+&ltdiv class="snackbar__warning w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+  &ltp class="pl-1 pr-2 text-4 ">Alert!  Something is happening that you may not expect!&lt/p>
+  &ltspan class=" h4 h-max w-max pl-2 pointer color-white">&#10006;&lt/span>
+&lt/div>
+
+&lt!-- COMPONENT BLOCK : SNACKBAR INFO -->
+&ltdiv class="snackbar__info w-max max-w-screen p-1 flex justify-center align-center flex-row flex-nowrap py-1 bg-dark-grey-1 rounded-s relative overflow-hide">
+  &ltp class="pl-1 pr-2 text-4 ">Heres some info for you&lt/p>
+  &ltspan class=" h4 h-max w-max pl-2 pointer color-white">&#10006;&lt/span>
 &lt/div>
               </code></pre>
             </div>
