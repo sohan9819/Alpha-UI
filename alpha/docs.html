@@ -1499,9 +1499,10 @@ COMPONENT BLOCK : BUTTON FLOATING ACTION
           >
             <h2 id="card" class="main__component--heading h2 ml-2 w-full"># Cards</h2>
 
-            <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
-
             <div class="max-w-screen flex justify-center items-center flex-col my-2">
+
+              <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
+
               <h3 class="card__component-title h3 my-2"># Card Types</h3>
               <select name="cards" id="card__option" class="rounded-m h4 m-1 bg-white">
                 <option value="card__basic">card__basic</option>
@@ -1567,7 +1568,7 @@ COMPONENT BLOCK : BUTTON FLOATING ACTION
               <!-- #### CODE #### -->
               <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
 &lt!-- ##### 
-COMPONENT BLOCK : BUTTON SIZES
+COMPONENT BLOCK : CARDS
 #### -->
 
 &lt!-- ##### 
@@ -1622,10 +1623,70 @@ Change the class name of this main container
 &lt/div>
               </code></pre>
 
+              <!-- ##### COMPONENT BLOCK : CARD TYPES #### -->
 
+              <h3 class="card__component-title h3 my-2"># Card Badges</h3>
+              <div class="w-full max-w-screen flex justify-center items-center gap-1 flex-wrap my-2 color-white overflow-x-auto">
+                <div class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+                  <div class="card__badge__basic absolute w-max h4 color-black bg-orange p-1 rounded-s bold box-shadow">Latest</div>
+                  <h2 class="h2 my-2 w-full pl-1">Hello world </h2>
+                  <p class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.</p>
+                </div>
+                <div class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+                  <div class="card__badge__right-point absolute w-max h4 color-black bg-orange p-1 bold box-shadow">NEW</div>
+                  <h2 class="h2 my-2 w-full pl-1">Hello world </h2>
+                  <p class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.</p>
+                </div>
+                <div class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+                  <div class="card__badge__left-point  absolute w-max h4 color-black bg-orange p-1 bold box-shadow">NEW</div>
+                  <h2 class="h2 my-2 w-full pl-1">Hello world </h2>
+                  <p class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.</p>
+                </div>
+                <div class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+                  <div class="card__badge__nonagon absolute w-max h4 color-black bg-orange p-1 rounded-s bold box-shadow">50%</div>
+                  <h2 class="h2 my-2 w-full pl-1">Hello world </h2>
+                  <p class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.</p>
+                </div>
+              </div>
+              <!-- #### CODE #### -->
+              <pre><code class="language-html scroll-hide hljs h4 rounded-m max-w-screen m-auto">
+&lt!-- ##### 
+COMPONENT BLOCK : CARD BADGES 
+#### -->
+
+&lt!-- card__badge__basic -->
+&ltdiv class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+  &ltdiv class="card__badge__basic absolute w-max h4 color-black bg-orange p-1 rounded-s bold box-shadow">Latest&lt/div>
+  &lth2 class="h2 my-2 w-full pl-1">Hello world &lt/h2>
+  &ltp class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.&lt/p>
+&lt/div>
+
+&lt!-- card__badge__right-point -->
+&ltdiv class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+  &ltdiv class="card__badge__right-point absolute w-max h4 color-black bg-orange p-1 bold box-shadow">NEW&lt/div>
+  &lth2 class="h2 my-2 w-full pl-1">Hello world &lt/h2>
+  &ltp class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.&lt/p>
+&lt/div>
+
+&lt!-- card__badge__left-point -->
+&ltdiv class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+  &ltdiv class="card__badge__left-point  absolute w-max h4 color-black bg-orange p-1 bold box-shadow">NEW&lt/div>
+  &lth2 class="h2 my-2 w-full pl-1">Hello world &lt/h2>
+  &ltp class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.&lt/p>
+&lt/div>
+
+&lt!-- card__badge__nonagon -->
+&ltdiv class="card_with_badges color-white flex flex-col justify-end items-center p-1 rounded-s">
+  &ltdiv class="card__badge__nonagon absolute w-max h4 color-black bg-orange p-1 rounded-s bold box-shadow">50%&lt/div>
+  &lth2 class="h2 my-2 w-full pl-1">Hello world &lt/h2>
+  &ltp class="text-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga sint ipsa corrupti nesciunt maxime quas? Voluptatum non magni quos error corporis.&lt/p>
+&lt/div>
+              </code></pre>
             </div>
+
           </div>
           <!-- ######################### -->
+
           <!-- ##### COMPONENT BLOCK : SNACKBAR #### -->
           <div
             class="main__component--block w-full m-auto  my-2"
