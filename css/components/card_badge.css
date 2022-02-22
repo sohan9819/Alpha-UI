@@ -1,0 +1,48 @@
+.card_with_badges {
+  height: 36rem;
+  width: 28rem;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, var(--color-black)),
+    url("https://source.unsplash.com/random/500x500");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card__badge__basic {
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+.card__badge__right-point {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  top: 1rem;
+  left: 0rem;
+  z-index: 2;
+}
+
+.card__badge__left-point {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  top: 1rem;
+  right: 0rem;
+  z-index: 2;
+}
+
+.card__badge__nonagon {
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
