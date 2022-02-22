@@ -9,6 +9,10 @@
   font-family: var(--font-primary);
 }
 
+.alpha > * {
+  animation: intro_reveal 0.5s forwards;
+}
+
 .alpha__header {
   height: 80%;
   min-height: 28rem;
