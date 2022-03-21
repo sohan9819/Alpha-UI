@@ -182,7 +182,8 @@ pre {
 }
 
 .badge__component-title,
-.nav__component-title {
+.nav__component-title,
+.rating__component-title {
   background-image: linear-gradient(
     to bottom,
     rgba(var(--color-rgb-purple), 1),
