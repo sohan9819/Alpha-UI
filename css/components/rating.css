@@ -10,7 +10,7 @@
   position: relative;
   width: 1.1em;
   cursor: pointer;
-  color: #000;
+  color: var(--color-white);
 }
 
 .rating > label:hover,
