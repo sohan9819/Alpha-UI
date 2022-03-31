@@ -11,10 +11,10 @@
 .badge__basic-text-xl {
   position: relative;
 }
-.badge__basic-content-s,
-.badge__basic-content-m,
-.badge__basic-content-l,
-.badge__basic-content-xl {
+.badge__basic-content-wrapper,
+.badge__basic-content-wrapper,
+.badge__basic-content-wrapper,
+.badge__basic-content-wrapper {
   position: relative;
 }
 
@@ -121,8 +121,7 @@
 /* #### BADGE CONTENT #### */
 
 /* BADGE SMALL */
-.badge__basic-content-s::after {
-  content: "30";
+.badge__basic-content-s {
   position: absolute;
   text-align: center;
   display: flex;
@@ -141,8 +140,7 @@
 }
 
 /* BADGE MEDIUM */
-.badge__basic-content-m::after {
-  content: "1";
+.badge__basic-content-m {
   position: absolute;
   text-align: center;
   display: flex;
@@ -161,8 +159,7 @@
 }
 
 /* BADGE LARGE */
-.badge__basic-content-l::after {
-  content: "36";
+.badge__basic-content-l {
   position: absolute;
   text-align: center;
   display: flex;
@@ -181,8 +178,7 @@
 }
 
 /* BADGE X_LARGE */
-.badge__basic-content-xl::after {
-  content: "999";
+.badge__basic-content-xl {
   position: absolute;
   text-align: center;
   display: flex;
