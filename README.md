@@ -92,3 +92,7 @@ Base Colors
 | light-grey-2  | `#7f8c8d` | ![#7f8c8d](https://via.placeholder.com/15/7f8c8d/000000?text=+) |
 
 ### Checkout the docs for more : https://alpha-dark-ui.netlify.app/alpha/docs.html
+
+
+#### To run this app locally clone the project and run index.html file
+```git clone https://github.com/sohan9819/Alpha-UI.git```
