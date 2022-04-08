@@ -11,10 +11,7 @@
 .badge__basic-text-xl {
   position: relative;
 }
-.badge__basic-content-s,
-.badge__basic-content-m,
-.badge__basic-content-l,
-.badge__basic-content-xl {
+.badge__basic-content-wrapper {
   position: relative;
 }
 
@@ -120,9 +117,7 @@
 
 /* #### BADGE CONTENT #### */
 
-/* BADGE SMALL */
-.badge__basic-content-s::after {
-  content: "30";
+.badge__basic-content {
   position: absolute;
   text-align: center;
   display: flex;
@@ -137,65 +132,24 @@
   background-color: var(--color-red);
   top: -0.6rem;
   right: -1.4rem;
+}
+
+/* BADGE SMALL */
+.badge__basic-content-s {
   transform: scale(0.6);
 }
 
 /* BADGE MEDIUM */
-.badge__basic-content-m::after {
-  content: "1";
-  position: absolute;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  height: 1.8rem;
-  border-radius: 0.8rem;
-  font-size: 1.4rem;
-  padding: 0rem 0.4rem;
-  color: var(--color-white);
-  background-color: var(--color-red);
-  top: -0.6rem;
-  right: -1.4rem;
+.badge__basic-content-m {
   transform: scale(0.8);
 }
 
 /* BADGE LARGE */
-.badge__basic-content-l::after {
-  content: "36";
-  position: absolute;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  height: 1.8rem;
-  border-radius: 0.8rem;
-  font-size: 1.4rem;
-  padding: 0rem 0.4rem;
-  color: var(--color-white);
-  background-color: var(--color-red);
-  top: -0.6rem;
-  right: -1.4rem;
+.badge__basic-content-l {
   transform: scale(1);
 }
 
 /* BADGE X_LARGE */
-.badge__basic-content-xl::after {
-  content: "999";
-  position: absolute;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  height: 1.8rem;
-  border-radius: 0.8rem;
-  font-size: 1.4rem;
-  padding: 0rem 0.4rem;
-  color: var(--color-white);
-  background-color: var(--color-red);
-  top: -0.6rem;
-  right: -1.4rem;
+.badge__basic-content-xl {
   transform: scale(1.2);
 }
