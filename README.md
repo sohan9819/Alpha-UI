@@ -2,6 +2,8 @@
 
 UI Component Library based on dark theme first approach
 
+A comprehensive UI CSS component library designed and developed using a dark theme first approach. This library includes a wide range of essential components commonly used in website development. By prioritizing the dark theme, the components seamlessly integrate into modern interfaces, providing a visually appealing and consistent user experience.
+
 ![alpha](https://user-images.githubusercontent.com/64985447/151864832-9d0838bc-2495-4686-ac03-bb43e1d23f86.png)
 
 Check out the project : https://alpha-dark-ui.netlify.app/
